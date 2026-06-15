@@ -1,6 +1,6 @@
 import scss from './ProjectsHero.module.scss';
 
-export default function ProjectsHero({ scrollToContact }) {
+export default function ProjectsHero() {
   return (
     <section className={scss.projectsHero}>
       <div className={scss.heroGradient} />
@@ -18,9 +18,7 @@ export default function ProjectsHero({ scrollToContact }) {
             </p>
 
             <div className={scss.ctaBlock}>
-              <button className={scss.ctaButton} onClick={scrollToContact}>
-                Book Consultation
-              </button>
+              <button className={scss.ctaButton}>Book Consultation</button>
             </div>
           </div>
         </div>
