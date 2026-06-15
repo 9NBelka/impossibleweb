@@ -1,4 +1,4 @@
-.notFoundPage {
+.backgroundBlock {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,8 +7,41 @@
   padding: 2vw;
   position: relative;
   height: 100vh;
+}
 
-  & h1 {
+@media (max-width: 1024px) {
+  .backgroundBlock {
+    height: 100vh;
+    padding: 5vw 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .backgroundBlock {
+    height: 100vh;
+    padding: 20vw 0;
+  }
+}
+
+.container {
+  text-align: center;
+  width: 100%;
+  max-width: 50vw;
+  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 90vw;
+  }
+}
+
+.notFoundPageBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & h2 {
     text-align: center;
     font-size: 10vw;
     color: var(--color-white);
@@ -16,14 +49,14 @@
     font-weight: var(--font-weight-bold);
     line-height: var(--font-lineh-small);
     letter-spacing: -0.025em;
-    background: linear-gradient(to right, #3b82f6, #a855f7);
+    background: linear-gradient(135deg, rgb(255, 37, 67, 0.8), rgba(255, 37, 67, 0.65));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
   }
 
-  & h2 {
+  & h3 {
     text-align: center;
     font-size: 2vw;
     color: var(--color-white);
@@ -34,83 +67,94 @@
     margin-top: 1vw;
   }
 
-  & .buttonLink {
-    text-decoration: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    border-radius: 0.5vw;
-    padding: 0.55vw 2vw;
-    font-size: 0.9vw;
-    background: var(--color-blue);
+  & .notFoundPageDescriptionOrange {
+    color: var(--color-red-main);
+    font-size: 0.85vw;
+    margin: 0 auto;
+    font-family: var(--font-Inter);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--font-lineh-big);
+    margin-top: 1vw;
+  }
+
+  & .notFoundPageButton {
+    background: linear-gradient(135deg, rgb(255, 37, 67, 0.75), rgba(255, 37, 67, 0.75));
+    border: none;
+    padding: 0.65vw 2vw;
+    font-size: 0.85vw;
     color: var(--color-white);
     font-family: var(--font-Inter);
-    font-weight: var(--font-weight-smallBold);
-    line-height: var(--font-lineh-normal);
+    font-weight: var(--font-weight-smallStrong);
+    line-height: var(--font-lineh-big);
+    border-radius: 0.6vw;
     cursor: pointer;
-    gap: 0.3vw;
-    border: 0.1vw solid rgba(255, 255, 255, 0.1);
-    transition: 0.2s ease-in-out;
-    margin-top: 2vw;
+    transition: all 0.3s ease;
+    box-shadow: 0 0.2vw 0.75vw rgb(255, 37, 67, 0.45);
+    margin-top: 1vw;
 
     &:hover {
       transform: translateY(-0.1vw);
-      background-color: #3b82f6cc;
-      border: 0.1vw solid rgba(59, 130, 246, 0.2);
-      box-shadow: 0 0.1vw 0.25vw 0.15vw #3b82f633;
+      box-shadow: 0 0.4vw 1.25vw rgb(255, 37, 67, 0);
+    }
+
+    &:active {
+      transform: translateY(0);
     }
   }
 }
 
 @media (max-width: 1024px) {
-  .notFoundPage {
-    padding: 2vw;
-
-    & h1 {
-      font-size: 30vw;
+  .notFoundPageBlock {
+    & h2 {
+      font-size: 25vw;
       letter-spacing: -0.025em;
     }
 
-    & h2 {
+    & h3 {
       font-size: 5vw;
+      margin-top: 2vw;
+    }
+
+    & .notFoundPageDescriptionOrange {
+      font-size: 1.8vw;
       margin-top: 3vw;
     }
 
-    & .buttonLink {
-      border-radius: 1vw;
+    & .notFoundPageButton {
+      font-size: 1.6vw;
+      margin-top: 3vw;
       padding: 1.5vw 7vw;
-      font-size: 3vw;
-      margin-top: 5vw;
+      border-radius: 1vw;
 
       &:hover {
-        transform: translateY(0vw);
-        background-color: #3b82f6cc;
-        border: 0.1vw solid rgba(59, 130, 246, 0.2);
-        box-shadow: 0 0.1vw 0.25vw 0.15vw #3b82f633;
+        transform: translateY(-0vw);
+        box-shadow: rgba(59, 130, 246, 0.4) 0px 0vw 0vw;
       }
     }
   }
 }
 
 @media (max-width: 576px) {
-  .notFoundPage {
-    padding: 2vw;
-
-    & h1 {
-      font-size: 40vw;
+  .notFoundPageBlock {
+    & h2 {
+      font-size: 35vw;
     }
 
-    & h2 {
-      font-size: 8vw;
+    & h3 {
+      font-size: 7vw;
       margin-top: 5vw;
     }
 
-    & .buttonLink {
-      border-radius: 1.5vw;
+    & .notFoundPageDescriptionOrange {
+      font-size: 3.6vw;
+      margin-top: 4vw;
+    }
+
+    & .notFoundPageButton {
+      font-size: 3.6vw;
+      margin-top: 4vw;
       padding: 2.5vw 10vw;
-      font-size: 4.5vw;
-      margin-top: 7vw;
+      border-radius: 2vw;
     }
   }
 }
