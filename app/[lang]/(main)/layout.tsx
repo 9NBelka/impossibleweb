@@ -22,12 +22,7 @@ export default function MainLayout({
 
   return (
     <>
-      <ImpossibleWebClient
-        lang={lang}
-        navLinks={navLinks}
-        startProject={t.header.startProject}
-        phone={t.header.phone}
-      />
+      <ImpossibleWebClient lang={lang} navLinks={navLinks} />
       {children}
       <Footer onFooterTextLinks={navLinks} lang={lang} />
     </>

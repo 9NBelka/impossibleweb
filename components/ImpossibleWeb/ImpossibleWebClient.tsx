@@ -12,16 +12,9 @@ interface NavLink {
 interface ImpossibleWebClientProps {
   lang: string;
   navLinks: NavLink[];
-  startProject: string;
-  phone: string;
 }
 
-export default function ImpossibleWebClient({
-  lang,
-  navLinks,
-  startProject,
-  phone,
-}: ImpossibleWebClientProps) {
+export default function ImpossibleWebClient({ lang, navLinks }: ImpossibleWebClientProps) {
   const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
 
@@ -61,8 +54,6 @@ export default function ImpossibleWebClient({
       lang={lang}
       isScrolled={isScrolled}
       scrollToSection={scrollToSection}
-      startProject={startProject}
-      phone={phone}
     />
   );
 }

@@ -16,8 +16,6 @@ interface HeaderProps {
   lang: string;
   isScrolled: boolean;
   scrollToSection: (id: string) => void;
-  startProject: string;
-  phone: string;
 }
 
 export default function Header({
@@ -25,8 +23,6 @@ export default function Header({
   lang,
   isScrolled,
   scrollToSection,
-  startProject,
-  phone,
 }: HeaderProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navRef = useRef<HTMLElement>(null);
@@ -63,8 +59,6 @@ export default function Header({
             setIsMenuOpen(false);
           }}
           lang={lang}
-          startProject={startProject}
-          phone={phone}
         />
 
         <button
