@@ -80,6 +80,47 @@
       }
     ]
   },
+  "contactForm": {
+    "title": "Ready to scale?",
+    "description": "Tell us about your project. We typically respond within 24 hours to schedule a discovery call and provide a detailed proposal.",
+    "features": [
+      "Direct access to senior developers & strategists",
+      "Transparent pricing and timeline estimates",
+      "No commitment required for initial consultation"
+    ],
+    "form": {
+      "namePlaceholder": "John Doe",
+      "nameLabel": "Name *",
+      "emailLabel": "Email *",
+      "emailPlaceholder": "example@mail.com",
+      "phoneLabel": "Phone *",
+      "phonePlaceholder": "+380 (99) 091-45-67",
+      "projectTypeLabel": "Project Type *",
+      "projectTypePlaceholder": "Select an area of interest...",
+      "detailsLabel": "Brief Details (optional)",
+      "detailsPlaceholder": "Additional information...",
+      "submit": "Send",
+      "submitting": "Sending...",
+      "success": "Your application has been sent successfully!",
+      "error": "Failed to submit your request. Please try again later.",
+      "options": [
+        { "value": "Web Development", "label": "Web Development" },
+        { "value": "Technical SEO", "label": "Technical SEO" },
+        { "value": "Workflow Automation", "label": "Workflow Automation" },
+        { "value": "Other / General Inquiry", "label": "Other / General Inquiry" }
+      ],
+      "errors": {
+        "nameMin": "The name must contain at least 2 characters.",
+        "nameRequired": "Name is required",
+        "emailInvalid": "Please enter a valid email address.",
+        "emailRequired": "Email is required",
+        "phoneInvalid": "Please enter a valid phone number.",
+        "phoneRequired": "Phone number is required",
+        "projectTypeRequired": "Select project type",
+        "detailsMax": "Maximum 1000 characters"
+      }
+    }
+  },
   "footer": {
     "description": "A specialized digital agency focused on building high-performance web experiences, technical SEO, and business automation.",
     "navigation": "Navigation",

@@ -80,13 +80,54 @@
       }
     ]
   },
+  "contactForm": {
+    "title": "Готовы к росту?",
+    "description": "Расскажите о вашем проекте. Мы обычно отвечаем в течение 24 часов, чтобы назначить звонок и подготовить детальное предложение.",
+    "features": [
+      "Прямой доступ к senior-разработчикам и стратегам",
+      "Прозрачное ценообразование и сроки",
+      "Консультация без обязательств"
+    ],
+    "form": {
+      "namePlaceholder": "Иван Иванов",
+      "nameLabel": "Имя *",
+      "emailLabel": "Email *",
+      "emailPlaceholder": "example@mail.com",
+      "phoneLabel": "Телефон *",
+      "phonePlaceholder": "+380 (99) 091-45-67",
+      "projectTypeLabel": "Тип проекта *",
+      "projectTypePlaceholder": "Выберите направление...",
+      "detailsLabel": "Детали (необязательно)",
+      "detailsPlaceholder": "Дополнительная информация...",
+      "submit": "Отправить",
+      "submitting": "Отправка...",
+      "success": "Заявка успешно отправлена!",
+      "error": "Не удалось отправить заявку. Попробуйте позже.",
+      "options": [
+        { "value": "Web Development", "label": "Веб-разработка" },
+        { "value": "Technical SEO", "label": "Технический SEO" },
+        { "value": "Workflow Automation", "label": "Автоматизация процессов" },
+        { "value": "Other / General Inquiry", "label": "Другое / Общий вопрос" }
+      ],
+      "errors": {
+        "nameMin": "Имя должно содержать не менее 2 символов.",
+        "nameRequired": "Введите имя",
+        "emailInvalid": "Введите корректный email.",
+        "emailRequired": "Email обязателен",
+        "phoneInvalid": "Введите корректный номер телефона.",
+        "phoneRequired": "Телефон обязателен",
+        "projectTypeRequired": "Выберите тип проекта",
+        "detailsMax": "Максимум 1000 символов"
+      }
+    }
+  },
   "footer": {
     "description": "Специализированное digital-агентство, сфокусированное на создании высокопроизводительных веб-решений, техническом SEO и автоматизации бизнеса.",
     "navigation": "Навигация",
     "contacts": "Контакты",
     "social": "Социальные сети",
     "copyright": "Все права защищены.",
-    "tagline": "Мы делаем #impossibleWEB",
+    "tagline": "We Do #impossibleWEB",
     "privacyPolicy": "Политика конфиденциальности"
   },
   "aboutUsPage": {

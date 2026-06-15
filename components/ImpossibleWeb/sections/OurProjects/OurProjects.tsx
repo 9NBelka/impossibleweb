@@ -6,17 +6,12 @@ import scss from './OurProjects.module.scss';
 import { BsArrowRightShort, BsArrowLeftShort } from 'react-icons/bs';
 import LangLink from '../../../LangLink/LangLink';
 import { getT } from '@/lib/i18n';
-
-interface Project {
-  title: string;
-  image: string;
-  features: string[];
-  descriptions?: string;
-  dateCreate?: string;
-}
+import { Project, Lang } from '@/data/projects';
 
 export default function OurProjects({ projects, lang }: { projects: Project[]; lang: string }) {
   const t = getT(lang);
+  const l = (lang as Lang) in { en: true, ru: true } ? (lang as Lang) : 'en';
+
   const [isHovered, setIsHovered] = useState(false);
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: 'start' });
 
@@ -63,7 +58,7 @@ export default function OurProjects({ projects, lang }: { projects: Project[]; l
                     </div>
                     <h3 className={scss.titleProject}>{project.title}</h3>
                     <div>
-                      {project.features.map((feature, idx) => (
+                      {project.features[l].map((feature, idx) => (
                         <button key={idx} className={scss.featuresBlock}>
                           {feature}
                         </button>
