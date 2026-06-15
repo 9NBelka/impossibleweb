@@ -11,7 +11,7 @@ interface NavLink {
 }
 
 interface NavigationProps {
-  navRef: React.RefObject<HTMLElement>;
+  navRef: React.RefObject<HTMLElement | null>;
   isMenuOpen: boolean;
   onHeaderTextLinks: NavLink[];
   scrollToSection: (id: string) => void;
