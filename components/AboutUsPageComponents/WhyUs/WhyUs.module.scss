@@ -1,0 +1,250 @@
+.whyUs {
+  display: flex;
+  flex-direction: column;
+  padding: 4vw 0;
+}
+
+@media (max-width: 1024px) {
+  .whyUs {
+    padding: 6vw 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .whyUs {
+    padding: 10vw 0;
+  }
+}
+
+.container {
+  max-width: 70vw;
+  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 95vw;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 90vw;
+    margin: 0 auto;
+  }
+}
+
+.header {
+  h2 {
+    font-size: 2.1vw;
+    color: var(--main-page-b-color-darkGrey);
+    font-family: var(--font-Inter);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--font-lineh-small2);
+  }
+
+  p {
+    font-size: 0.85vw;
+    margin: 0 auto;
+    color: var(--main-page-b-color-lightGrey);
+    font-family: var(--font-Inter);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--font-lineh-big);
+    margin-top: 0.5vw;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header {
+    h2 {
+      font-size: 4vw;
+    }
+
+    p {
+      font-size: 1.8vw;
+      margin-top: 1vw;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    h2 {
+      font-size: 8vw;
+    }
+
+    p {
+      font-size: 3.6vw;
+      margin-top: 1.5vw;
+    }
+  }
+}
+
+.flexBlock {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.4vw;
+  margin-top: 1.5vw;
+}
+
+@media (max-width: 1024px) {
+  .flexBlock {
+    gap: 2.75vw;
+    margin-top: 3vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .flexBlock {
+    gap: 5vw;
+    margin-top: 6vw;
+  }
+}
+
+.card {
+  width: 32%;
+  background: var(--main-page-b-color-white);
+  padding: 1.5vw 1.5vw;
+  border-radius: 0.75vw;
+  box-shadow: 0 0.2vw 0.6vw rgba(0, 0, 0, 0.15);
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0.2vw;
+    background: linear-gradient(135deg, var(--color-red-main), var(--color-red));
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+  }
+
+  &:hover {
+    box-shadow: 0 0.2vw 1vw rgba(0, 0, 0, 0.25);
+
+    &::before {
+      transform: scaleX(1);
+    }
+
+    & .cardIconBlock {
+      background: var(--color-red-main);
+
+      & svg {
+        color: var(--color-white);
+      }
+    }
+  }
+
+  & .cartTitle {
+    font-size: 1.1vw;
+    color: var(--main-page-b-color-darkGrey);
+    font-family: var(--font-Inter);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--font-lineh-normal);
+    margin-top: 1.2vw;
+  }
+
+  & .cartDescription {
+    font-size: 0.8vw;
+    color: var(--main-page-b-color-lightGrey);
+    font-family: var(--font-Inter);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--font-lineh-big);
+    margin-top: 0.8vw;
+  }
+}
+
+@media (max-width: 1024px) {
+  .card {
+    width: 48.5%;
+    padding: 3vw 3vw;
+    border-radius: 1vw;
+
+    &::before {
+      height: 0.4vw;
+    }
+
+    & .cartTitle {
+      font-size: 2.4vw;
+      margin-top: 2vw;
+    }
+
+    & .cartDescription {
+      font-size: 1.8vw;
+      margin-top: 1vw;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    width: 100%;
+    padding: 5vw 5vw;
+    border-radius: 2vw;
+    box-shadow: 0 0.4vw 0.8vw rgba(0, 0, 0, 0.3);
+
+    &::before {
+      height: 0.8vw;
+    }
+
+    & .cartTitle {
+      font-size: 5vw;
+      margin-top: 3vw;
+    }
+
+    & .cartDescription {
+      font-size: 3.6vw;
+      margin-top: 2vw;
+    }
+  }
+}
+
+.cardIconBlock {
+  width: 3vw;
+  height: 3vw;
+  background: var(--color-light-lightGray);
+  border-radius: 0.8vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+
+  & .cardIcon {
+    width: 1.1vw;
+    height: 1.1vw;
+    color: var(--color-darkGray);
+    transition: all 0.3s ease;
+  }
+}
+
+@media (max-width: 1024px) {
+  .cardIconBlock {
+    width: 6.5vw;
+    height: 6.5vw;
+    border-radius: 1.2vw;
+
+    & .cardIcon {
+      width: 2.75vw;
+      height: 2.75vw;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .cardIconBlock {
+    width: 13vw;
+    height: 13vw;
+    border-radius: 3vw;
+
+    & .cardIcon {
+      width: 5vw;
+      height: 5vw;
+    }
+  }
+}

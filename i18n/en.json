@@ -1,0 +1,134 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "projects": "Projects",
+    "aboutUs": "About us"
+  },
+  "header": {
+    "phone": "+380 (73) 451-69-72",
+    "startProject": "Start Project"
+  },
+  "hero": {
+    "hashtag": "We Do #impossibleWeb",
+    "title": "is your partner in web development",
+    "subtitle": "Premium web development, technical SEO, and workflow automation for modern e-commerce and fast-growing tech brands.",
+    "bookConsultation": "Book Consultation",
+    "viewPortfolio": "View Portfolio",
+    "stats": {
+      "experience": "years of experience",
+      "projects": "projects",
+      "retention": "Client Retention"
+    }
+  },
+  "ourProjects": {
+    "subTitle": "Our projects",
+    "title": "Our projects",
+    "description": "We create turnkey websites and advertising - all in one place",
+    "viewAll": "View all"
+  },
+  "provenResults": {
+    "subTitle": "Customer Results",
+    "title": "Proven results",
+    "description": "We measure success by the impact we create. Here is how we've helped our clients scale.",
+    "viewAll": "View all case studies",
+    "results": [
+      {
+        "subTitle": "E-commerce",
+        "title": "Conversion Rate Increase",
+        "stats": "+45%",
+        "description": "Complete headless Shopify migration and checkout optimization for a D2C apparel brand."
+      },
+      {
+        "subTitle": "SaaS",
+        "title": "Organic Traffic Growth",
+        "stats": "2.5x",
+        "description": "Technical SEO overhaul and programmatic content generation structure implementation."
+      },
+      {
+        "subTitle": "Logistics",
+        "title": "Saved Monthly",
+        "stats": "120h",
+        "description": "Custom n8n automation pipeline bridging legacy ERP systems with modern dispatch tools."
+      }
+    ]
+  },
+  "services": {
+    "subTitle": "services",
+    "title": "Core capabilities",
+    "description": "We focus on high-impact services that directly influence your bottom line. No fluff, just results.",
+    "items": [
+      {
+        "title": "Custom Web Development",
+        "description": "Blazing fast, scalable applications built with Next.js, React, and modern serverless architectures tailored to your business logic.",
+        "features": ["Headless Commerce", "Web Applications", "API Integration"]
+      },
+      {
+        "title": "High-Converting Landing Pages",
+        "description": "Pixel-perfect design meets conversion rate optimization. We build landing pages that turn ad clicks into loyal customers.",
+        "features": ["A/B Testing Setup", "Copywriting Support", "Performance Audits"]
+      },
+      {
+        "title": "Technical SEO",
+        "description": "Foundation-first search engine optimization. We fix technical debt, improve site speed, and structure data for maximum visibility.",
+        "features": ["Core Web Vitals", "Schema Markup", "Crawlability Fixes"]
+      },
+      {
+        "title": "Workflow Automation",
+        "description": "Eliminate manual tasks. We design and implement robust automations using n8n and custom webhooks to streamline operations.",
+        "features": ["CRM Syncing", "Order Processing", "Custom n8n Nodes"]
+      }
+    ]
+  },
+  "footer": {
+    "description": "A specialized digital agency focused on building high-performance web experiences, technical SEO, and business automation.",
+    "navigation": "Navigation",
+    "contacts": "Contacts",
+    "social": "Social networks",
+    "copyright": "All rights reserved.",
+    "tagline": "We Do #impossibleWEB",
+    "privacyPolicy": "Privacy Policy"
+  },
+  "aboutUsPage": {
+    "hero": {
+      "title": "About us",
+      "subtitle": "We build modern, fast and effective websites that help businesses grow and sell. From idea and design to promotion and advertising - everything is turnkey, with transparent terms and attention to every detail.",
+      "button": "Book Consultation"
+    },
+    "mainText": {
+      "title": "ImpossibleWeb - your reliable partner in web development",
+      "paragraphOneBold": "ImpossibleWeb",
+      "paragraphOne": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library, took a 1914 Cicero translation and scrambled it to make dummy text.",
+      "paragraphTwoBold": "It has survived not only many decades",
+      "paragraphTwo": "but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised thanks to these sheets and more recently with desktop publishing software."
+    },
+    "numbers": {
+      "title": "ImpossibleWeb in figures",
+      "stats": [
+        { "value": "12+", "label": "years of experience" },
+        { "value": "10+", "label": "Years in web creation" },
+        { "value": "100+", "label": "projects" },
+        { "value": "200+", "label": "Design options" },
+        { "value": "98%", "label": "Client Retention" }
+      ]
+    },
+    "whyUs": {
+      "title": "Why choose impossibleWeb",
+      "subtitle": "We don't just create websites, we create effective tools for growing your business.",
+      "cards": [
+        {
+          "title": "Personalised approach",
+          "description": "Each project is tailored to meet the goals and specifics of your business."
+        },
+        {
+          "title": "Full service",
+          "description": "From idea and design to promotion and advertising - everything is turnkey, without extra contractors and overpayments."
+        },
+        {
+          "title": "Real results",
+          "description": "We build websites that bring in customers and sales, not just a \"web presence\"."
+        }
+      ]
+    }
+  }
+}

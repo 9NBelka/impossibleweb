@@ -1,0 +1,35 @@
+import { use } from 'react';
+import { getT } from '@/lib/i18n';
+import ImpossibleWebClient from '@/components/ImpossibleWeb/ImpossibleWebClient';
+import Footer from '@/components/Footer/Footer';
+
+export default function MainLayout({
+  children,
+  params,
+}: {
+  children: React.ReactNode;
+  params: Promise<{ lang: string }>;
+}) {
+  const { lang } = use(params);
+  const t = getT(lang);
+
+  const navLinks = [
+    { title: t.nav.home, linkToPage: '/' },
+    { title: t.nav.services, linkToPage: '/services' },
+    { title: t.nav.projects, linkToPage: '/projects' },
+    { title: t.nav.aboutUs, linkToPage: '/about-us' },
+  ];
+
+  return (
+    <>
+      <ImpossibleWebClient
+        lang={lang}
+        navLinks={navLinks}
+        startProject={t.header.startProject}
+        phone={t.header.phone}
+      />
+      {children}
+      <Footer onFooterTextLinks={navLinks} lang={lang} />
+    </>
+  );
+}

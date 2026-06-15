@@ -1,0 +1,154 @@
+.aboutUsNubmers {
+  display: flex;
+  flex-direction: column;
+  padding: 4vw 0;
+  width: 100%;
+  background-color: var(--main-page-b-color-white7);
+}
+
+@media (max-width: 1024px) {
+  .aboutUsNubmers {
+    padding: 6vw 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .aboutUsNubmers {
+    padding: 10vw 0;
+  }
+}
+
+.container {
+  max-width: 70vw;
+  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 95vw;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 90vw;
+    margin: 0 auto;
+  }
+}
+
+.header {
+  h2 {
+    font-size: 2.1vw;
+    color: var(--main-page-b-color-darkGrey);
+    font-family: var(--font-Inter);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--font-lineh-small2);
+  }
+}
+
+@media (max-width: 1024px) {
+  .header {
+    h2 {
+      font-size: 4vw;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    h2 {
+      font-size: 8vw;
+    }
+  }
+}
+
+.stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  gap: 1.6vw;
+  margin-top: 1.75vw;
+}
+
+.stat {
+  display: flex;
+  background: var(--color-darkGray);
+  padding: 0.5vw 2vw;
+  border-radius: 1vw;
+  align-items: center;
+  gap: 0.65vw;
+
+  strong {
+    font-size: 2vw;
+    color: var(--color-red-main);
+    font-family: var(--font-Inter);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--font-lineh-normal);
+  }
+
+  span {
+    font-size: 0.85vw;
+    color: var(--color-lightGray);
+    font-family: var(--font-Inter);
+    font-weight: var(--font-weight-smallStrong);
+    line-height: var(--font-lineh-normal);
+    margin-top: 0.2vw;
+  }
+}
+
+@media (max-width: 1024px) {
+  .stats {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 2vw;
+    margin-top: 3vw;
+  }
+
+  .stat {
+    gap: 2vw;
+    padding: 1vw 3.5vw;
+    border-radius: 2vw;
+
+    strong {
+      font-size: 3.6vw;
+    }
+
+    span {
+      font-size: 1.8vw;
+      margin-top: 0vw;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .stats {
+    justify-content: space-between;
+    width: 100%;
+    gap: 4vw;
+    margin-top: 6vw;
+  }
+
+  .stat {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    padding: 3vw 4vw;
+    border-radius: 3vw;
+    width: 47%;
+
+    strong {
+      font-size: 7.5vw;
+      text-align: center;
+    }
+
+    span {
+      font-size: 3.6vw;
+      margin-top: 0vw;
+      text-align: center;
+    }
+  }
+}

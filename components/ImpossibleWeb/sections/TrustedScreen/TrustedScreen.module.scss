@@ -1,0 +1,105 @@
+.trustedScreen {
+  padding: 0;
+}
+
+.trustedScreenBlocks {
+  background: linear-gradient(135deg, rgba(15, 28, 53, 1), rgba(15, 28, 53, 1));
+}
+
+.trustedScreenBlock {
+  display: flex;
+  justify-content: center;
+  padding: 0vw 3vw;
+
+  & img {
+    width: 5vw;
+  }
+}
+
+@media (max-width: 1024px) {
+  .trustedScreenBlock {
+    padding: 0vw 4vw;
+
+    & img {
+      width: 10vw;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .trustedScreenBlock {
+    padding: 0vw 5vw;
+
+    & img {
+      width: 24vw;
+    }
+  }
+}
+
+.trustedScreenImages {
+  // filter: grayscale(100%) contrast(0.6);
+  filter: grayscale(100%) contrast(0.4);
+  transition: 0.2s ease-in-out;
+
+  &:hover {
+    filter: brightness(200%) contrast(1);
+    -webkit-filter: brightness(200%) contrast(1);
+    -moz-filter: brightness(200%) contrast(1);
+  }
+}
+
+// .header {
+//   text-align: center;
+
+//   h2 {
+//     background: linear-gradient(
+//       135deg,
+//       var(--main-page-b-color-darkGrey),
+//       var(--main-page-b-color-lightBlue)
+//     );
+//     -webkit-background-clip: text;
+//     -webkit-text-fill-color: transparent;
+//     background-clip: text;
+//     font-size: 2.1vw;
+//     color: var(--main-page-b-color-darkGrey);
+//     font-family: var(--font-Inter);
+//     font-weight: var(--font-weight-bold);
+//     line-height: var(--font-lineh-small2);
+//   }
+
+//   p {
+//     font-size: 0.85vw;
+//     margin: 0 auto;
+//     color: var(--main-page-b-color-light-lightBlue);
+//     font-family: var(--font-Inter);
+//     font-weight: var(--font-weight-smallStrong);
+//     line-height: var(--font-lineh-big);
+//     margin-top: 0.5vw;
+//   }
+// }
+
+// @media (max-width: 1024px) {
+//   .header {
+//     h2 {
+//       font-size: 3.6vw;
+//     }
+
+//     p {
+//       font-size: 1.8vw;
+//       margin-top: 0.5vw;
+//     }
+//   }
+// }
+
+// @media (max-width: 576px) {
+//   .header {
+//     h2 {
+//       font-size: 8vw;
+//     }
+
+//     p {
+//       font-size: 3.6vw;
+//       margin-top: 1vw;
+//     }
+//   }
+// }
