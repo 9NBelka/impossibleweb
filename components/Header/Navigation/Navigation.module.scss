@@ -47,6 +47,10 @@
     & .ctaButtonPhone {
       display: none;
     }
+
+    & .linkToPhone {
+      display: none;
+    }
   }
 
   & .linkToPhone {
@@ -97,7 +101,7 @@
 
 @media (max-width: 1024px) {
   .phoneAndButtonBlock {
-    gap: 0vw;
+    gap: 10vw;
 
     & .nav {
       display: flex;
@@ -176,6 +180,7 @@
 
 @media (max-width: 576px) {
   .phoneAndButtonBlock {
+    gap: 0vw;
     & .nav {
       width: 50vw;
       padding: 15vw 6vw;
@@ -193,9 +198,14 @@
         border-radius: 1vw;
         margin-top: 2vw;
       }
+
+      & .linkToPhone {
+        display: flex;
+      }
     }
 
     & .linkToPhone {
+      display: none;
       font-size: 3.2vw;
     }
   }

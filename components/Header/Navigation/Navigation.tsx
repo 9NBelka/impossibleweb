@@ -39,6 +39,15 @@ export default function Navigation({
         <button className={scss.ctaButtonPhone} onClick={() => scrollToSection('contacts')}>
           {t.header.startProject}
         </button>
+
+        <a
+          className={scss.linkToPhone}
+          href='tel:+380734516972'
+          id='callToPhoneOnHeader'
+          target='_blank'
+          rel='noopener noreferrer'>
+          {t.header.phone}
+        </a>
       </nav>
 
       <a

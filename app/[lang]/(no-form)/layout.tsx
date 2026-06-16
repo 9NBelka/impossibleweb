@@ -2,9 +2,8 @@ import { use } from 'react';
 import { getT } from '@/lib/i18n';
 import ImpossibleWebClient from '@/components/ImpossibleWeb/ImpossibleWebClient';
 import Footer from '@/components/Footer/Footer';
-import ContactForm from '@/components/ContactForm/ContactForm';
 
-export default function MainLayout({
+export default function NoFormLayout({
   children,
   params,
 }: {
@@ -26,7 +25,6 @@ export default function MainLayout({
     <>
       <ImpossibleWebClient lang={lang} navLinks={navLinks} />
       {children}
-      <ContactForm lang={lang} />
       <Footer onFooterTextLinks={navLinks} lang={lang} />
     </>
   );
