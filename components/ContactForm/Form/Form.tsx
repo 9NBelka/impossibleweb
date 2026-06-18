@@ -14,6 +14,8 @@ export default function ConForm({ lang }: { lang: string }) {
   const [status, setStatus] = useState({ type: '', message: '' });
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState('');
+  const [isBudgetOpen, setIsBudgetOpen] = useState(false);
+  const [selectedBudget, setSelectedBudget] = useState('');
 
   const validationSchema = Yup.object({
     name: Yup.string().min(2, t.errors.nameMin).required(t.errors.nameRequired),
@@ -22,11 +24,19 @@ export default function ConForm({ lang }: { lang: string }) {
       .matches(/^(\+?\d{1,3})?[\s.-]?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/, t.errors.phoneInvalid)
       .required(t.errors.phoneRequired),
     projectType: Yup.string().required(t.errors.projectTypeRequired),
+    budget: Yup.string().required(t.errors.budgetRequired),
     details: Yup.string().max(1000, t.errors.detailsMax),
   });
 
   const handleSubmit = async (
-    values: { name: string; email: string; phone: string; projectType: string; details: string },
+    values: {
+      name: string;
+      email: string;
+      phone: string;
+      projectType: string;
+      budget: string;
+      details: string;
+    },
     { resetForm }: { resetForm: () => void },
   ) => {
     setIsSubmitting(true);
@@ -42,6 +52,7 @@ export default function ConForm({ lang }: { lang: string }) {
 📧 Email: ${values.email}
 📱 Телефон: ${values.phone}
 📂 Тип проекта: ${values.projectType}
+💰 Бюджет: ${values.budget}
 💬 Детали:
 ${values.details || 'Не указано'}
     `.trim();
@@ -57,6 +68,7 @@ ${values.details || 'Не указано'}
         setStatus({ type: 'success', message: t.success });
         resetForm();
         setSelectedOption('');
+        setSelectedBudget('');
       } else {
         throw new Error('Sending error');
       }
@@ -74,9 +86,18 @@ ${values.details || 'Не указано'}
     setIsOpen(false);
   };
 
+  const handleBudgetSelect = (
+    value: string,
+    setFieldValue: (field: string, value: string) => void,
+  ) => {
+    setSelectedBudget(value);
+    setFieldValue('budget', value);
+    setIsBudgetOpen(false);
+  };
+
   return (
     <Formik
-      initialValues={{ name: '', email: '', phone: '', projectType: '', details: '' }}
+      initialValues={{ name: '', email: '', phone: '', projectType: '', budget: '', details: '' }}
       validationSchema={validationSchema}
       onSubmit={handleSubmit}>
       {({ isValid, setFieldValue }) => (
@@ -127,6 +148,20 @@ ${values.details || 'Не указано'}
               placeholder={t.projectTypePlaceholder}
             />
             <ErrorMessage name='projectType' component='div' className={styles.error} />
+          </div>
+
+          <div className={styles.formGroup}>
+            <label className={styles.label}>{t.budgetLabel}</label>
+            <CustomSelect
+              isOpen={isBudgetOpen}
+              setIsOpen={setIsBudgetOpen}
+              selectedOption={selectedBudget}
+              setFieldValue={setFieldValue}
+              handleSelect={handleBudgetSelect}
+              options={t.budgetOptions}
+              placeholder={t.budgetPlaceholder}
+            />
+            <ErrorMessage name='budget' component='div' className={styles.error} />
           </div>
 
           <div className={styles.formGroup}>

@@ -30,7 +30,7 @@ export const projects: Project[] = [
   {
     title: 'AZR Pivdennyy',
     slug: 'azr-pivdennyy',
-    image: '/images/projectsImages/project-azr.png',
+    image: '/images/projectsImages/project-azr.webp',
     descriptions: {
       en: 'A modern website for a car service station in southern Ukraine. Full cycle: design, development, SEO setup.',
       ru: 'Современный сайт для автосервиса на юге Украины. Полный цикл: дизайн, разработка, настройка SEO.',
@@ -121,7 +121,7 @@ export const projects: Project[] = [
   {
     title: 'kiev term',
     slug: 'kiev-term',
-    image: '/images/projectsImages/project-kievtern.png',
+    image: '/images/projectsImages/project-kievtern.webp',
     descriptions: {
       en: 'Business card website for a Kyiv-based company. Clean design, fast load, mobile-first.',
       ru: 'Сайт-визитка для киевской компании. Чистый дизайн, быстрая загрузка, mobile-first.',
@@ -132,7 +132,7 @@ export const projects: Project[] = [
     },
     imagesAllSites: [
       {
-        image: '/images/projectsImages/fullSite/kievtern/allsiteKievTern.png',
+        image: '/images/projectsImages/fullSite/kievtern/allsiteKievTern.webp',
         caption: {
           en: 'Home page',
           ru: 'Главная страница',
@@ -216,7 +216,7 @@ export const projects: Project[] = [
   {
     title: 'mechOrbit',
     slug: 'mech-orbit',
-    image: '/images/projectsImages/project-orbit.png',
+    image: '/images/projectsImages/project-orbit.webp',
     descriptions: {
       en: 'CRM and landing page for an auto repair shop management SaaS. Built on Next.js with multilingual blog.',
       ru: 'CRM и лендинг для SaaS-системы управления автосервисом. Разработан на Next.js с мультиязычным блогом.',
@@ -227,28 +227,28 @@ export const projects: Project[] = [
     },
     imagesAllSites: [
       {
-        image: '/images/projectsImages/fullSite/orbit/allsiteOrbitMainPage.png',
+        image: '/images/projectsImages/fullSite/orbit/allsiteOrbitMainPage.jpg',
         caption: {
           en: 'Home page',
           ru: 'Главная страница',
         },
       },
       {
-        image: '/images/projectsImages/fullSite/orbit/allsiteOrbitBlogPage.png',
+        image: '/images/projectsImages/fullSite/orbit/allsiteOrbitBlogPage.webp',
         caption: {
           en: 'Blog',
           ru: 'Блог',
         },
       },
       {
-        image: '/images/projectsImages/fullSite/orbit/allsiteOrbitArticlePage.png',
+        image: '/images/projectsImages/fullSite/orbit/allsiteOrbitArticlePage.webp',
         caption: {
           en: 'Article page',
           ru: 'Страница статьи',
         },
       },
       {
-        image: '/images/projectsImages/fullSite/orbit/allsiteOrbitForInvest.png',
+        image: '/images/projectsImages/fullSite/orbit/allsiteOrbitForInvest.webp',
         caption: {
           en: 'Page for investors',
           ru: 'Страница для инвесторов',
@@ -256,14 +256,14 @@ export const projects: Project[] = [
       },
 
       {
-        image: '/images/projectsImages/fullSite/orbit/allsiteOrbitForMobileApp.png',
+        image: '/images/projectsImages/fullSite/orbit/allsiteOrbitForMobileApp.webp',
         caption: {
           en: 'Application page',
           ru: 'Страница для приложения',
         },
       },
       {
-        image: '/images/projectsImages/fullSite/orbit/allsiteOrbitLoginPage.png',
+        image: '/images/projectsImages/fullSite/orbit/allsiteOrbitLoginPage.webp',
         caption: {
           en: 'Login page',
           ru: 'Страница входа',
@@ -347,7 +347,7 @@ export const projects: Project[] = [
   {
     title: 'Avtoatmosfera',
     slug: 'avtoatmosfera',
-    image: '/images/projectsImages/project-avtosfera.png',
+    image: '/images/projectsImages/project-avtosfera.webp',
     descriptions: {
       en: 'Website for a Kharkiv auto service network. Services grid, feedback section, contact form with redirect.',
       ru: 'Сайт для сети автосервисов в Харькове. Сетка услуг, блок отзывов, контактная форма с редиректом.',
@@ -358,21 +358,21 @@ export const projects: Project[] = [
     },
     imagesAllSites: [
       {
-        image: '/images/projectsImages/fullSite/avtoatmosfera/allsiteAtmosfera.png',
+        image: '/images/projectsImages/fullSite/avtoatmosfera/allsiteAtmosfera.webp',
         caption: {
           en: 'Home page',
           ru: 'Главная страница',
         },
       },
       {
-        image: '/images/projectsImages/fullSite/avtoatmosfera/allsiteAtmosferaContact.png',
+        image: '/images/projectsImages/fullSite/avtoatmosfera/allsiteAtmosferaContact.webp',
         caption: {
           en: 'Contacts',
           ru: 'Контакты',
         },
       },
       {
-        image: '/images/projectsImages/fullSite/avtoatmosfera/allsiteAtmosferaService.png',
+        image: '/images/projectsImages/fullSite/avtoatmosfera/allsiteAtmosferaService.webp',
         caption: {
           en: 'Products',
           ru: 'Продукция',
@@ -463,17 +463,10 @@ export const projects: Project[] = [
     },
     imagesAllSites: [
       {
-        image: '/images/projectsImages/project-azr.png',
+        image: '/images/projectsImages/project-azr.webp',
         caption: {
           en: 'Home page',
           ru: 'Главная страница',
-        },
-      },
-      {
-        image: '/images/projectsImages/project-azr-about.png',
-        caption: {
-          en: 'About us',
-          ru: 'О нас',
         },
       },
     ],
@@ -554,7 +547,7 @@ export const projects: Project[] = [
   {
     title: 'Kantsedal Artem',
     slug: 'kantsedal-artem',
-    image: '/images/projectsImages/project-logitrans.png',
+    image: '/images/projectsImages/project-logitrans.webp',
     descriptions: {
       en: 'Landing page for a German logistics company. Lead form with n8n webhook and Telegram notifications.',
       ru: 'Лендинг для немецкой логистической компании. Лид-форма с n8n-вебхуком и уведомлениями в Telegram.',
@@ -565,7 +558,7 @@ export const projects: Project[] = [
     },
     imagesAllSites: [
       {
-        image: '/images/projectsImages/fullSite/logitrans/allSiteLogitransMainPage.png',
+        image: '/images/projectsImages/fullSite/logitrans/allSiteLogitransMainPage.webp',
         caption: {
           en: 'Home page',
           ru: 'Главная страница',
@@ -649,7 +642,7 @@ export const projects: Project[] = [
   {
     title: 'UtilityAI',
     slug: 'utility-ai',
-    image: '/images/projectsImages/project-utilityAi.png',
+    image: '/images/projectsImages/project-utilityAi.webp',
     descriptions: {
       en: 'AI-powered utility tools platform. Custom interface and API integrations.',
       ru: 'Платформа AI-инструментов. Кастомный интерфейс и API-интеграции.',
@@ -660,7 +653,7 @@ export const projects: Project[] = [
     },
     imagesAllSites: [
       {
-        image: '/images/projectsImages/fullSite/syndicate/allsiteUtilityAiMainPage.png',
+        image: '/images/projectsImages/fullSite/syndicate/allsiteUtilityAiMainPage.webp',
         caption: {
           en: 'Home page',
           ru: 'Главная страница',
@@ -744,7 +737,7 @@ export const projects: Project[] = [
   {
     title: 'Entity Component System',
     slug: 'entity-component-system',
-    image: '/images/projectsImages/project-ecs.png',
+    image: '/images/projectsImages/project-ecs.webp',
     descriptions: {
       en: 'Educational website about ECS architecture in game development.',
       ru: 'Образовательный сайт об архитектуре ECS в разработке игр.',
@@ -755,7 +748,7 @@ export const projects: Project[] = [
     },
     imagesAllSites: [
       {
-        image: '/images/projectsImages/fullSite/syndicate/allsiteESCMainPage.png',
+        image: '/images/projectsImages/fullSite/syndicate/allsiteESCMainPage.webp',
         caption: {
           en: 'Home page',
           ru: 'Главная страница',
@@ -839,7 +832,7 @@ export const projects: Project[] = [
   {
     title: 'ARCHITECTURE UNITY GAMES',
     slug: 'architecture-unity-games',
-    image: '/images/projectsImages/project-architecture.png',
+    image: '/images/projectsImages/project-architecture.webp',
     descriptions: {
       en: 'Resource site about Unity game architecture patterns and best practices.',
       ru: 'Ресурс об архитектурных паттернах и лучших практиках в Unity.',
@@ -934,7 +927,7 @@ export const projects: Project[] = [
   {
     title: 'ADDRESSABLES: ANESTHESIA',
     slug: 'addressables-anesthesia',
-    image: '/images/projectsImages/project-addressables.png',
+    image: '/images/projectsImages/project-addressables.webp',
     descriptions: {
       en: 'Technical documentation site about Unity Addressables asset management system.',
       ru: 'Сайт с технической документацией по системе управления ассетами Unity Addressables.',
@@ -945,7 +938,7 @@ export const projects: Project[] = [
     },
     imagesAllSites: [
       {
-        image: '/images/projectsImages/fullSite/syndicate/allsiteAddressablesMainPage.png',
+        image: '/images/projectsImages/fullSite/syndicate/allsiteAddressablesMainPage.webp',
         caption: {
           en: 'Home page',
           ru: 'Главная страница',

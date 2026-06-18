@@ -98,6 +98,8 @@
       "phonePlaceholder": "+34 123 456 789",
       "projectTypeLabel": "Project Type *",
       "projectTypePlaceholder": "Select an area of interest...",
+      "budgetLabel": "Monthly marketing budget",
+      "budgetPlaceholder": "Select your approximate budget",
       "detailsLabel": "Brief Details (optional)",
       "detailsPlaceholder": "Additional information...",
       "submit": "Send",
@@ -110,6 +112,12 @@
         { "value": "Workflow Automation", "label": "Workflow Automation" },
         { "value": "Other / General Inquiry", "label": "Other / General Inquiry" }
       ],
+      "budgetOptions": [
+        { "value": "Less than 2000", "label": "Less than €2,000" },
+        { "value": "2000 to 4000", "label": "€2,000 to €4,000" },
+        { "value": "4000 to 5000", "label": "€4,000 to €5,000" },
+        { "value": "More than 5000", "label": "More than €5,000" }
+      ],
       "errors": {
         "nameMin": "The name must contain at least 2 characters.",
         "nameRequired": "Name is required",
@@ -118,6 +126,7 @@
         "phoneInvalid": "Please enter a valid phone number.",
         "phoneRequired": "Phone number is required",
         "projectTypeRequired": "Select project type",
+        "budgetRequired": "Please select a budget range",
         "detailsMax": "Maximum 1000 characters"
       }
     }

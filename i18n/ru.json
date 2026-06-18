@@ -98,6 +98,8 @@
       "phonePlaceholder": "+34 123 456 789",
       "projectTypeLabel": "Тип проекта *",
       "projectTypePlaceholder": "Выберите направление...",
+      "budgetLabel": "Ежемесячный бюджет на маркетинг",
+      "budgetPlaceholder": "Выберите свой приблизительный бюджет",
       "detailsLabel": "Детали (необязательно)",
       "detailsPlaceholder": "Дополнительная информация...",
       "submit": "Отправить",
@@ -110,6 +112,12 @@
         { "value": "Workflow Automation", "label": "Автоматизация процессов" },
         { "value": "Other / General Inquiry", "label": "Другое / Общий вопрос" }
       ],
+      "budgetOptions": [
+        { "value": "Less than 2000", "label": "Менее 2000 евро" },
+        { "value": "2000 to 4000", "label": "От 2000 до 4000 евро" },
+        { "value": "4000 to 5000", "label": "От 4000 до 5000 евро" },
+        { "value": "More than 5000", "label": "Более 5000 евро" }
+      ],
       "errors": {
         "nameMin": "Имя должно содержать не менее 2 символов.",
         "nameRequired": "Введите имя",
@@ -118,6 +126,7 @@
         "phoneInvalid": "Введите корректный номер телефона.",
         "phoneRequired": "Телефон обязателен",
         "projectTypeRequired": "Выберите тип проекта",
+        "budgetRequired": "Выберите диапазон бюджета",
         "detailsMax": "Максимум 1000 символов"
       }
     }
