@@ -1,0 +1,135 @@
+.gallery {
+  width: 100%;
+  padding: 4vw 0;
+  background-color: var(--main-page-b-color-white7);
+  position: relative;
+}
+
+.container {
+  max-width: 70vw;
+  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 95vw;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 90vw;
+    margin: 0 auto;
+  }
+}
+
+.header {
+  h3 {
+    font-size: 2.1vw;
+    color: var(--main-page-b-color-darkGrey);
+    font-family: var(--font-Inter);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--font-lineh-small2);
+  }
+}
+
+@media (max-width: 1024px) {
+  .header {
+    h3 {
+      font-size: 4vw;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    h3 {
+      font-size: 8vw;
+    }
+  }
+}
+
+.grid {
+  margin-top: 1.5vw;
+  columns: 2;
+  column-gap: 3vw;
+  column-fill: balance;
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    margin-top: 3vw;
+    columns: 2;
+    column-gap: 4vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .grid {
+    margin-top: 6vw;
+    columns: 1;
+    column-gap: 6vw;
+  }
+}
+
+.designAllSite {
+  display: inline-block;
+
+  & .caption {
+    font-size: 1vw;
+    color: var(--color-red-main);
+    font-family: var(--font-Inter);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--font-lineh-normal);
+  }
+
+  & .imageBlock {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+    margin-top: 0.5vw;
+    margin-bottom: 1.5vw;
+    display: inline-block; /* важно для columns */
+    width: 100%;
+    overflow: hidden;
+    border-radius: 0.5vw;
+    border: 0.1vw solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.2vw 0.6vw rgba(0, 0, 0, 0.2);
+
+    & .image {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .designAllSite {
+    & .caption {
+      font-size: 2.4vw;
+    }
+
+    & .imageBlock {
+      margin-top: 1vw;
+      margin-bottom: 1.5vw;
+      border-radius: 1vw;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .designAllSite {
+    & .caption {
+      font-size: 5vw;
+    }
+
+    & .imageBlock {
+      margin-top: 2vw;
+      margin-bottom: 6vw;
+      border-radius: 2vw;
+    }
+  }
+}

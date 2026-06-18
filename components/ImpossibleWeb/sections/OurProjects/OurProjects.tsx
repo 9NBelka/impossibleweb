@@ -51,7 +51,7 @@ export default function OurProjects({ projects, lang }: { projects: Project[]; l
           <div className={scss.embla} ref={emblaRef}>
             <div className={scss.emblaContainer}>
               {projects.map((project, index) => (
-                <div className={scss.emblaSlide} key={index}>
+                <LangLink key={index} to={`/projects/${project.slug}`} className={scss.emblaSlide}>
                   <div className={scss.slideProject}>
                     <div className={scss.imageBlock}>
                       <img src={project.image} alt={project.title} />
@@ -65,7 +65,7 @@ export default function OurProjects({ projects, lang }: { projects: Project[]; l
                       ))}
                     </div>
                   </div>
-                </div>
+                </LangLink>
               ))}
             </div>
           </div>

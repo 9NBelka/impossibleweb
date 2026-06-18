@@ -7,7 +7,7 @@
     "blog": "Блог"
   },
   "header": {
-    "phone": "+380 (73) 451-69-72",
+    "phone": "+34 610 988 651",
     "startProject": "Начать проект"
   },
   "hero": {
@@ -95,7 +95,7 @@
       "emailLabel": "Email *",
       "emailPlaceholder": "example@mail.com",
       "phoneLabel": "Телефон *",
-      "phonePlaceholder": "+380 (99) 091-45-67",
+      "phonePlaceholder": "+34 123 456 789",
       "projectTypeLabel": "Тип проекта *",
       "projectTypePlaceholder": "Выберите направление...",
       "detailsLabel": "Детали (необязательно)",

@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import scss from './ProjectsList.module.scss';
 import { Project, Lang } from '@/data/projects';
+import LangLink from '@/components/LangLink/LangLink';
 
 const translations = {
   en: {
@@ -73,7 +74,7 @@ export default function ProjectsList({ projects, lang }: { projects: Project[]; 
 
         <div className={scss.projectBlocks}>
           {sorted.map((project, index) => (
-            <div className={scss.projectBlock} key={index}>
+            <LangLink key={index} to={`/projects/${project.slug}`} className={scss.projectBlock}>
               <div className={scss.imageBlock}>
                 <img src={project.image} alt={project.title} />
               </div>
@@ -89,12 +90,21 @@ export default function ProjectsList({ projects, lang }: { projects: Project[]; 
                   </>
                 )}
                 {project.features[l].map((feature, idx) => (
+                  <>
+                    <p key={idx} className={scss.featuresBlock}>
+                      {feature}
+                    </p>
+                    <span>/</span>
+                  </>
+                ))}
+                {project.developedOn.map((dev, idx) => (
                   <p key={idx} className={scss.featuresBlock}>
-                    {feature}
+                    {dev}
+                    {idx < project.developedOn.length - 1 && `, `}&nbsp;
                   </p>
                 ))}
               </div>
-            </div>
+            </LangLink>
           ))}
         </div>
       </div>

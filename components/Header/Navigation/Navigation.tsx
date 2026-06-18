@@ -42,7 +42,7 @@ export default function Navigation({
 
         <a
           className={scss.linkToPhone}
-          href='tel:+380734516972'
+          href='tel:+34610988651'
           id='callToPhoneOnHeader'
           target='_blank'
           rel='noopener noreferrer'>
@@ -52,7 +52,7 @@ export default function Navigation({
 
       <a
         className={scss.linkToPhone}
-        href='tel:+380734516972'
+        href='tel:+34610988651'
         id='callToPhoneOnHeader'
         target='_blank'
         rel='noopener noreferrer'>

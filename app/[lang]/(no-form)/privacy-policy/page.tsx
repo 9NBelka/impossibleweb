@@ -60,7 +60,7 @@ const translations = {
       {
         title: '9. Contact Information',
         text: 'If you have any questions regarding this Privacy Policy, please contact us:',
-        list: ['Email: mpdart2013@gmail.com', 'Phone: +380734516972'],
+        list: ['Email: mpdart2013@gmail.com', 'Phone: +34 610 988 651'],
       },
     ],
   },
@@ -123,7 +123,7 @@ const translations = {
       {
         title: '9. Контактная информация',
         text: 'Если у вас есть вопросы по данной Политике конфиденциальности, свяжитесь с нами:',
-        list: ['Email: mpdart2013@gmail.com', 'Телефон: +380734516972'],
+        list: ['Email: mpdart2013@gmail.com', 'Телефон: +34 610 988 651'],
       },
     ],
   },

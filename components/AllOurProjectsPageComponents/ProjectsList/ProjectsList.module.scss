@@ -173,10 +173,15 @@
     color: var(--main-page-b-color-darkGrey);
     font-family: var(--font-Inter);
     font-weight: var(--font-weight-light);
-    line-height: var(--font-lineh-small);
+    line-height: var(--font-lineh-big);
   }
 
   & span {
+    font-size: 0.65vw;
+    color: var(--main-page-b-color-darkGrey);
+    font-family: var(--font-Inter);
+    font-weight: var(--font-weight-light);
+    line-height: var(--font-lineh-big);
     padding: 0 0.5vw;
   }
 
@@ -185,13 +190,14 @@
     color: var(--main-page-b-color-darkGrey);
     font-family: var(--font-Inter);
     font-weight: var(--font-weight-light);
-    line-height: var(--font-lineh-small);
+    line-height: var(--font-lineh-big);
     border: 0;
   }
 }
 
 @media (max-width: 1024px) {
   .featuresAndTextBlock {
+    flex-wrap: wrap;
     margin-top: 2vw;
 
     & .dateText {

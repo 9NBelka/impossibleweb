@@ -3,6 +3,7 @@ import { getT } from '@/lib/i18n';
 import ImpossibleWebClient from '@/components/ImpossibleWeb/ImpossibleWebClient';
 import Footer from '@/components/Footer/Footer';
 import ContactForm from '@/components/ContactForm/ContactForm';
+import FloatingContacts from '@/components/FloatingContacts/FloatingContacts';
 
 export default function MainLayout({
   children,
@@ -28,6 +29,7 @@ export default function MainLayout({
       {children}
       <ContactForm lang={lang} />
       <Footer onFooterTextLinks={navLinks} lang={lang} />
+      <FloatingContacts />
     </>
   );
 }

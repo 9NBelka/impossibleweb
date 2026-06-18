@@ -53,13 +53,23 @@ export default function Footer({ onFooterTextLinks, lang }: FooterProps) {
                   mpdart2013@gmail.com
                 </a>
                 <a
-                  href='https://wa.me/380734516972'
+                  href='https://wa.me/34610988651'
                   className={scss.contactLink}
                   target='_blank'
                   rel='noopener noreferrer'>
                   <FaWhatsapp />
-                  +380 (73) 451-69-72
+                  +34 610 988 651
                 </a>
+                {lang === 'ru' && (
+                  <a
+                    href='https://wa.me/380733291216'
+                    className={scss.contactLink}
+                    target='_blank'
+                    rel='noopener noreferrer'>
+                    <FaWhatsapp />
+                    +380 73 329 12 16
+                  </a>
+                )}
                 <a
                   href='https://t.me/Archerius'
                   className={scss.contactLink}
