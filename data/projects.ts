@@ -41,7 +41,7 @@ export const projects: Project[] = [
     },
     imagesAllSites: [
       {
-        image: '/images/projectsImages/fullSite/azr/allsiteAzr.png',
+        image: '/images/projectsImages/fullSite/azr/allsiteAzr.webp',
         caption: {
           en: 'Home page',
           ru: 'Главная страница',
