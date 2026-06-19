@@ -6,7 +6,7 @@ import Footer from '@/components/Footer/Footer';
 import FloatingContacts from '@/components/FloatingContacts/FloatingContacts';
 import dynamic from 'next/dynamic';
 
-const ContactForm = dynamic(() => import('@/components/ContactForm/ContactForm'), { ssr: false });
+const ContactForm = dynamic(() => import('@/components/ContactForm/ContactForm'));
 
 export default function MainLayout({
   children,
