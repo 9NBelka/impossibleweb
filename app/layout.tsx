@@ -2,6 +2,10 @@ import type { Metadata } from 'next';
 import './globals.scss';
 
 export const metadata: Metadata = {
+  verification: {
+    google: '9nZhwv2uMIsefBE3L2J2OwIU5p2NNBqP4aqQtYIGYHo',
+  },
+
   title: 'High-Converting Websites & Advertising That Brings Clients | Impossible Web',
   description:
     'We create powerful, high-converting websites and set up targeted advertising that attracts real clients and grows your business. Professional web development & promotion.',

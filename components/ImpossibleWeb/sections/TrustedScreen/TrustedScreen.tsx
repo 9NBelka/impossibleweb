@@ -23,7 +23,7 @@ export default function TrustedScreen({ right }: { right?: 'left' | 'right' }) {
       <Marquee direction={right} speed={50} gradient={false} className={scss.trustedScreenBlocks}>
         {[...images, ...images].map((img, index) => (
           <div key={index} className={scss.trustedScreenBlock}>
-            <img src={img} alt='Scrolling' className={scss.trustedScreenImages} />
+            <img src={img} alt='logo' className={scss.trustedScreenImages} loading='lazy' />
           </div>
         ))}
       </Marquee>

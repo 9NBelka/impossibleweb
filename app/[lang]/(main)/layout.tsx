@@ -2,8 +2,11 @@ import { use } from 'react';
 import { getT } from '@/lib/i18n';
 import ImpossibleWebClient from '@/components/ImpossibleWeb/ImpossibleWebClient';
 import Footer from '@/components/Footer/Footer';
-import ContactForm from '@/components/ContactForm/ContactForm';
+// import ContactForm from '@/components/ContactForm/ContactForm';
 import FloatingContacts from '@/components/FloatingContacts/FloatingContacts';
+import dynamic from 'next/dynamic';
+
+const ContactForm = dynamic(() => import('@/components/ContactForm/ContactForm'), { ssr: false });
 
 export default function MainLayout({
   children,

@@ -1,7 +1,7 @@
 import styles from './ContactForm.module.scss';
 import { BsCheckCircle } from 'react-icons/bs';
-import ConForm from './Form/Form';
 import { getT } from '@/lib/i18n';
+import ConForm from './Form/Form';
 
 export default function ContactForm({ lang }: { lang: string }) {
   const t = getT(lang).contactForm;
