@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.scss';
+import { SpeedInsights } from '@vercel/speed-insights/next';
+import { Analytics } from '@vercel/analytics/next';
 
 export const metadata: Metadata = {
   verification: {
@@ -70,7 +72,11 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           crossOrigin='anonymous'
         />
       </head>
-      <body suppressHydrationWarning>{children}</body>
+      <body suppressHydrationWarning>
+        {children}
+        <SpeedInsights />
+        <Analytics />
+      </body>
     </html>
   );
 }
