@@ -90,12 +90,10 @@ export default function ProjectsList({ projects, lang }: { projects: Project[]; 
                   </>
                 )}
                 {project.features[l].map((feature, idx) => (
-                  <>
-                    <p key={idx} className={scss.featuresBlock}>
-                      {feature}
-                    </p>
+                  <p key={idx} className={scss.featuresBlock}>
+                    {feature}
                     <span>/</span>
-                  </>
+                  </p>
                 ))}
                 {project.developedOn.map((dev, idx) => (
                   <p key={idx} className={scss.featuresBlock}>
