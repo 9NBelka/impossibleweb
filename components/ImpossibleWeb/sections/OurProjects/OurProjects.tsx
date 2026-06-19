@@ -41,10 +41,16 @@ export default function OurProjects({ projects, lang }: { projects: Project[]; l
           className={scss.sliderWrapper}
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}>
-          <button className={scss.prevBtn} onClick={() => emblaApi?.scrollPrev()}>
+          <button
+            className={scss.prevBtn}
+            onClick={() => emblaApi?.scrollPrev()}
+            aria-label='Previous project'>
             <BsArrowLeftShort className={scss.icon} />
           </button>
-          <button className={scss.nextBtn} onClick={() => emblaApi?.scrollNext()}>
+          <button
+            className={scss.nextBtn}
+            onClick={() => emblaApi?.scrollNext()}
+            aria-label='Next project'>
             <BsArrowRightShort className={scss.icon} />
           </button>
 
