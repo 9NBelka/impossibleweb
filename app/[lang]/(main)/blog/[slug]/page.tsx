@@ -85,7 +85,7 @@ export default async function BlogPostPage({
 
           <div className={styles.articleBlockCenter}>
             <div className={styles.articleBlock}>
-              <h1
+              <h2
                 className={styles.title}
                 dangerouslySetInnerHTML={{ __html: post.title.rendered }}
               />

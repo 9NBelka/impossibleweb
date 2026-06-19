@@ -163,7 +163,7 @@
 
 .linksSection,
 .contactSection {
-  h4 {
+  h5 {
     font-size: 0.95vw;
     color: var(--main-page-b-color-white);
     font-family: var(--font-Inter);
@@ -204,7 +204,7 @@
 @media (max-width: 1024px) {
   .linksSection,
   .contactSection {
-    h4 {
+    h5 {
       font-size: 2.2vw;
     }
 
@@ -232,7 +232,7 @@
   .servicesSection,
   .contactSection {
     margin-top: 5vw;
-    h4 {
+    h5 {
       font-size: 5vw;
     }
 

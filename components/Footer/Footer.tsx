@@ -31,7 +31,7 @@ export default function Footer({ onFooterTextLinks, lang }: FooterProps) {
 
           <div className={scss.linksAndServicesBlock}>
             <div className={scss.linksSection}>
-              <h4>{t.footer.navigation}</h4>
+              <h5>{t.footer.navigation}</h5>
               <ul>
                 {onFooterTextLinks.map((info, idx) => (
                   <li key={idx}>
@@ -42,7 +42,7 @@ export default function Footer({ onFooterTextLinks, lang }: FooterProps) {
             </div>
 
             <div className={scss.contactSection}>
-              <h4>{t.footer.contacts}</h4>
+              <h5>{t.footer.contacts}</h5>
               <div className={scss.contactList}>
                 <a
                   href='mailto:mpdart2013@gmail.com'

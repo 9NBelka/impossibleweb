@@ -4,17 +4,17 @@ import Marquee from 'react-fast-marquee';
 import scss from './TrustedScreen.module.scss';
 
 const images = [
-  '/images/trustUs/arhitectureLogoCube.png',
-  '/images/trustUs/teamLeadLogoCube.png',
-  '/images/trustUs/unitTestLogoCube.png',
-  '/images/trustUs/adressabblesLogoCube.png',
-  '/images/trustUs/ecsLogoCube.png',
-  '/images/trustUs/crmMech.png',
-  '/images/trustUs/logo_kyiv_term.png',
-  '/images/trustUs/avtosferaLogo.png',
-  '/images/trustUs/AZRLogo.png',
-  '/images/trustUs/blackTowerLogo.png',
-  '/images/trustUs/fireAutoLogo.png',
+  '/images/trustUs/arhitectureLogoCube.webp',
+  '/images/trustUs/teamLeadLogoCube.webp',
+  '/images/trustUs/unitTestLogoCube.webp',
+  '/images/trustUs/adressabblesLogoCube.webp',
+  '/images/trustUs/ecsLogoCube.webp',
+  '/images/trustUs/crmMech.webp',
+  '/images/trustUs/logo_kyiv_term.webp',
+  '/images/trustUs/avtosferaLogo.webp',
+  '/images/trustUs/AZRLogo.webp',
+  '/images/trustUs/blackTowerLogo.webp',
+  '/images/trustUs/fireAutoLogo.webp',
 ];
 
 export default function TrustedScreen({ right }: { right?: 'left' | 'right' }) {
