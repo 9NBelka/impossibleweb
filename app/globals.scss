@@ -1,34 +1,32 @@
-/* Шрифт Inter */
 @font-face {
   font-family: 'Inter';
-  src: url('/fonts/Inter/Inter-VariableFont_opsz_wght.ttf') format('truetype');
-  font-weight: 100 900; /* Диапазон весов */
+  src: url('/fonts/Inter/Inter-VariableFont_opsz_wght.woff2') format('woff2');
+  font-weight: 100 900;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Inter';
-  src: url('/fonts/Inter/Inter-Italic-VariableFont_opsz_wght.ttf') format('truetype');
-  font-weight: 100 900; /* Диапазон весов */
+  src: url('/fonts/Inter/Inter-Italic-VariableFont_opsz_wght.woff2') format('woff2');
+  font-weight: 100 900;
   font-style: italic;
   font-display: swap;
 }
 
-/* Шрифт Mulish */
 @font-face {
   font-family: 'Mulish';
-  src: url('/fonts/Mulish/Mulish-Italic-VariableFont_wght.ttf') format('truetype');
-  font-weight: 200 1000; /* Диапазон весов */
+  src: url('/fonts/Mulish/Mulish-VariableFont_wght.woff2') format('woff2');
+  font-weight: 200 1000;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Mulish';
-  src: url('/fonts/Mulish/Mulish-VariableFont_wght.ttf') format('truetype');
-  font-weight: 200 1000; /* Диапазон весов */
-  font-style: normal;
+  src: url('/fonts/Mulish/Mulish-Italic-VariableFont_wght.woff2') format('woff2');
+  font-weight: 200 1000;
+  font-style: italic;
   font-display: swap;
 }
 
