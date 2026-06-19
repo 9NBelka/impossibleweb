@@ -1,11 +1,13 @@
 import { getT } from '@/lib/i18n';
+import dynamic from 'next/dynamic';
 import Hero from './sections/Hero/Hero';
-import TrustedScreen from './sections/TrustedScreen/TrustedScreen';
 import Services from './sections/Services/Services';
 import ProvenResults from './sections/ProvenResults/ProvenResults';
-import OurProjects from './sections/OurProjects/OurProjects';
 import { projects } from '@/data/projects';
-import ContactForm from '../ContactForm/ContactForm';
+
+const OurProjects = dynamic(() => import('./sections/OurProjects/OurProjects'));
+const TrustedScreen = dynamic(() => import('./sections/TrustedScreen/TrustedScreen'));
+const ContactForm = dynamic(() => import('../ContactForm/ContactForm'));
 
 export default function ImpossibleWeb({ lang }: { lang: string }) {
   return (

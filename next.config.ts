@@ -5,8 +5,16 @@ const nextConfig: NextConfig = {
     optimizeCss: true,
   },
   compiler: {
-    // убирает console.log в продакшене
     removeConsole: true,
+  },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'blog.impossibleweb.pro',
+      },
+    ],
+    formats: ['image/avif', 'image/webp'],
   },
 };
 
