@@ -31,7 +31,7 @@ export default function Footer({ onFooterTextLinks, lang }: FooterProps) {
 
           <div className={scss.linksAndServicesBlock}>
             <div className={scss.linksSection}>
-              <h5>{t.footer.navigation}</h5>
+              <p className={scss.sectionTitle}>{t.footer.navigation}</p>
               <ul>
                 {onFooterTextLinks.map((info, idx) => (
                   <li key={idx}>
@@ -42,7 +42,7 @@ export default function Footer({ onFooterTextLinks, lang }: FooterProps) {
             </div>
 
             <div className={scss.contactSection}>
-              <h5>{t.footer.contacts}</h5>
+              <p className={scss.sectionTitle}>{t.footer.contacts}</p>
               <div className={scss.contactList}>
                 <a
                   href='mailto:mpdart2013@gmail.com'
@@ -82,7 +82,7 @@ export default function Footer({ onFooterTextLinks, lang }: FooterProps) {
             </div>
 
             <div className={scss.social}>
-              <h5>{t.footer.social}</h5>
+              <p className={scss.sectionTitle}>{t.footer.social}</p>
               <div className={scss.socialLinks}>
                 <a
                   href='https://t.me/Archerius'

@@ -163,7 +163,7 @@
 
 .linksSection,
 .contactSection {
-  h5 {
+  & .sectionTitle {
     font-size: 0.95vw;
     color: var(--main-page-b-color-white);
     font-family: var(--font-Inter);
@@ -204,7 +204,7 @@
 @media (max-width: 1024px) {
   .linksSection,
   .contactSection {
-    h5 {
+    & .sectionTitle {
       font-size: 2.2vw;
     }
 
@@ -232,7 +232,7 @@
   .servicesSection,
   .contactSection {
     margin-top: 5vw;
-    h5 {
+    & .sectionTitle {
       font-size: 5vw;
     }
 
@@ -331,7 +331,7 @@
 }
 
 .social {
-  h5 {
+  & .sectionTitle {
     font-size: 0.95vw;
     color: var(--main-page-b-color-white);
     font-family: var(--font-Inter);
@@ -342,7 +342,7 @@
 
 @media (max-width: 1024px) {
   .social {
-    h5 {
+    & .sectionTitle {
       font-size: 2.2vw;
     }
   }
@@ -351,7 +351,7 @@
 @media (max-width: 576px) {
   .social {
     margin-top: 10vw;
-    h5 {
+    & .sectionTitle {
       font-size: 5vw;
     }
   }
