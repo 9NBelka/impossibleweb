@@ -26,6 +26,9 @@ export default function ConForm({ lang }: { lang: string }) {
     projectType: Yup.string().required(t.errors.projectTypeRequired),
     budget: Yup.string().required(t.errors.budgetRequired),
     details: Yup.string().max(1000, t.errors.detailsMax),
+    privacy: Yup.boolean()
+      .oneOf([true], t.errors.privacyRequired)
+      .required(t.errors.privacyRequired),
   });
 
   const handleSubmit = async (
@@ -36,6 +39,7 @@ export default function ConForm({ lang }: { lang: string }) {
       projectType: string;
       budget: string;
       details: string;
+      privacy: boolean;
     },
     { resetForm }: { resetForm: () => void },
   ) => {
@@ -97,7 +101,15 @@ ${values.details || 'Не указано'}
 
   return (
     <Formik
-      initialValues={{ name: '', email: '', phone: '', projectType: '', budget: '', details: '' }}
+      initialValues={{
+        name: '',
+        email: '',
+        phone: '',
+        projectType: '',
+        budget: '',
+        details: '',
+        privacy: false,
+      }}
       validationSchema={validationSchema}
       onSubmit={handleSubmit}>
       {({ isValid, setFieldValue }) => (
@@ -174,6 +186,24 @@ ${values.details || 'Не указано'}
               placeholder={t.detailsPlaceholder}
             />
             <ErrorMessage name='details' component='div' className={styles.error} />
+          </div>
+
+          <div className={styles.formGroup}>
+            <label className={styles.checkboxLabel}>
+              <Field name='privacy' type='checkbox' className={styles.checkbox} />
+              <span>
+                {t.privacyLabel}{' '}
+                <a
+                  href={`/${lang}/privacy-policy`}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className={styles.privacyLink}>
+                  {t.privacyLink}
+                </a>
+                {t.privacyLabelEnd}{' '}
+              </span>
+            </label>
+            <ErrorMessage name='privacy' component='div' className={styles.error} />
           </div>
 
           <button type='submit' disabled={isSubmitting || !isValid} className={styles.submitButton}>

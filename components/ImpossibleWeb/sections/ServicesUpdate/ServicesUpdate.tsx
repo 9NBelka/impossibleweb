@@ -1,4 +1,4 @@
-import scss from './Services.module.scss';
+import scss from './ServicesUpdate.module.scss';
 import { BsCheckCircle, BsCodeSlash, BsJournalText, BsLightningCharge } from 'react-icons/bs';
 import { VscGraph } from 'react-icons/vsc';
 import { getT } from '@/lib/i18n';
@@ -11,7 +11,7 @@ const icons = [
   <BsLightningCharge className={scss.cardIcon} />,
 ];
 
-export default function Services({ lang }: { lang: string }) {
+export default function ServicesUpdate({ lang }: { lang: string }) {
   const t = getT(lang);
 
   return (
@@ -25,11 +25,21 @@ export default function Services({ lang }: { lang: string }) {
         <div className={scss.flexBlock}>
           {t.services.items.map((service, index) => (
             <div key={index} className={scss.card}>
-              <div className={scss.cardIconBlock}>
-                <span>{icons[index]}</span>
+              <div className={scss.nubmerAndCardIconAndTitleBlock}>
+                <p className={scss.numberText}>0{index + 1}</p>
+                <div className={scss.neon}></div>
+                <div className={scss.cardIconAndTitleBlocks}>
+                  <div className={scss.cardIconAndTitleBlock}>
+                    <div className={scss.cardIconBlock}>
+                      <span>{icons[index]}</span>
+                    </div>
+                    <h3 className={scss.cartTitle}>{service.title}</h3>
+                  </div>
+
+                  <p className={scss.cartDescription}>{service.description}</p>
+                </div>
               </div>
-              <h3 className={scss.cartTitle}>{service.title}</h3>
-              <p className={scss.cartDescription}>{service.description}</p>
+
               <ul className={scss.features}>
                 {service.features.map((feature, idx) => (
                   <li key={idx}>
@@ -38,6 +48,7 @@ export default function Services({ lang }: { lang: string }) {
                   </li>
                 ))}
               </ul>
+              <div className={scss.neon}></div>
             </div>
           ))}
         </div>

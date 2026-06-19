@@ -4,6 +4,7 @@ import Hero from './sections/Hero/Hero';
 import Services from './sections/Services/Services';
 import ProvenResults from './sections/ProvenResults/ProvenResults';
 import { projects } from '@/data/projects';
+import ServicesUpdate from './sections/ServicesUpdate/ServicesUpdate';
 
 const OurProjects = dynamic(() => import('./sections/OurProjects/OurProjects'));
 const TrustedScreen = dynamic(() => import('./sections/TrustedScreen/TrustedScreen'));
@@ -16,6 +17,7 @@ export default function ImpossibleWeb({ lang }: { lang: string }) {
       <ContactForm lang={lang} />
       <TrustedScreen />
       <Services lang={lang} />
+      {/* <ServicesUpdate lang={lang} /> */}
       <ProvenResults lang={lang} />
       <OurProjects projects={projects} lang={lang} />
     </main>

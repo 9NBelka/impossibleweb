@@ -81,6 +81,10 @@
       }
     ]
   },
+  "trustedTechnologies": {
+    "subTitle": "Trusted Technologies",
+    "title": "We work with the best tools and platforms"
+  },
   "contactForm": {
     "title": "Ready to scale?",
     "description": "Tell us about your project. We typically respond within 24 hours to schedule a discovery call and provide a detailed proposal.",
@@ -102,6 +106,9 @@
       "budgetPlaceholder": "Select your approximate budget",
       "detailsLabel": "Brief Details (optional)",
       "detailsPlaceholder": "Additional information...",
+      "privacyLabel": "I have read and agree to the",
+      "privacyLabelEnd": ", as well as the possibility of recording business conversations that I have with the company.",
+      "privacyLink": "Privacy Policy",
       "submit": "Send",
       "submitting": "Sending...",
       "success": "Your application has been sent successfully!",
@@ -127,7 +134,8 @@
         "phoneRequired": "Phone number is required",
         "projectTypeRequired": "Select project type",
         "budgetRequired": "Please select a budget range",
-        "detailsMax": "Maximum 1000 characters"
+        "detailsMax": "Maximum 1000 characters",
+        "privacyRequired": "You must accept the privacy policy"
       }
     }
   },
