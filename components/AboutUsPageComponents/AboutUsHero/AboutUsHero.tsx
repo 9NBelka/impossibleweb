@@ -1,26 +1,14 @@
 'use client';
 
 import scss from './AboutUsHero.module.scss';
+import { getT } from '@/lib/i18n';
 
-const translations = {
-  en: {
-    title: 'About us',
-    subtitle:
-      'We build modern, fast and effective websites that help businesses grow and sell. From idea and design to promotion and advertising - everything is turnkey, with transparent terms and attention to every detail.',
-    button: 'Book Consultation',
-  },
-  ru: {
-    title: 'О нас',
-    subtitle:
-      'Мы создаём современные, быстрые и эффективные сайты, которые помогают бизнесу расти и продавать. От идеи и дизайна до продвижения и рекламы — всё под ключ, с прозрачными условиями и вниманием к каждой детали.',
-    button: 'Записаться на консультацию',
-  },
-};
+interface HeroProps {
+  lang: string;
+}
 
-type Lang = 'ru' | 'en';
-
-export default function AboutUsHero({ lang }: { lang: string }) {
-  const t = translations[lang as Lang] || translations.en;
+export default function AboutUsHero({ lang }: HeroProps) {
+  const t = getT(lang).aboutUsPage.hero;
 
   const scrollToContact = () => {
     document.getElementById('contacts')?.scrollIntoView({ behavior: 'smooth' });

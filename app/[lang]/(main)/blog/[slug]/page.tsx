@@ -4,13 +4,7 @@ import { getPost, formatDate } from '@/lib/wordpress';
 import styles from './BlogPost.module.scss';
 import { TiArrowLeftThick } from 'react-icons/ti';
 import ShareButtons from '@/components/ShareButtons/ShareButtons';
-
-const ui = {
-  en: { back: 'Back to blog' },
-  ru: { back: 'Назад к блогу' },
-};
-
-type Lang = 'ru' | 'en';
+import { getT } from '@/lib/i18n';
 
 export async function generateMetadata({
   params,
@@ -58,8 +52,7 @@ export default async function BlogPostPage({
   params: Promise<{ lang: string; slug: string }>;
 }) {
   const { lang, slug } = await params;
-  const l = (lang as Lang) in ui ? (lang as Lang) : 'en';
-  const t = ui[l];
+  const t = getT(lang).blogPage.post;
 
   const post = await getPost(slug);
   if (!post) notFound();
@@ -78,7 +71,7 @@ export default async function BlogPostPage({
     <>
       <article className={styles.article}>
         <div className={styles.container}>
-          <Link href={`/${l}/blog`} className={styles.back}>
+          <Link href={`/${lang}/blog`} className={styles.back}>
             <TiArrowLeftThick className={styles.backIcon} />
             {t.back}
           </Link>

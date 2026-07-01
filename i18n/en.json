@@ -1,14 +1,14 @@
 {
+  "header": {
+    "phone": "+34 610 988 651",
+    "startProject": "Start Project"
+  },
   "nav": {
     "home": "Home",
     "services": "Services",
     "projects": "Projects",
     "aboutUs": "About us",
     "blog": "Blog"
-  },
-  "header": {
-    "phone": "+34 610 988 651",
-    "startProject": "Start Project"
   },
   "hero": {
     "hashtag": "We Do #impossibleWeb",
@@ -21,38 +21,6 @@
       "projects": "projects",
       "retention": "Client Retention"
     }
-  },
-  "ourProjects": {
-    "subTitle": "Our projects",
-    "title": "Our projects",
-    "description": "We create turnkey websites and advertising - all in one place",
-    "viewAll": "View all"
-  },
-  "provenResults": {
-    "subTitle": "Customer Results",
-    "title": "Proven results",
-    "description": "We measure success by the impact we create. Here is how we've helped our clients scale.",
-    "viewAll": "View all case studies",
-    "results": [
-      {
-        "subTitle": "E-commerce",
-        "title": "Conversion Rate Increase",
-        "stats": "+45%",
-        "description": "Complete headless Shopify migration and checkout optimization for a D2C apparel brand."
-      },
-      {
-        "subTitle": "SaaS",
-        "title": "Organic Traffic Growth",
-        "stats": "2.5x",
-        "description": "Technical SEO overhaul and programmatic content generation structure implementation."
-      },
-      {
-        "subTitle": "Logistics",
-        "title": "Saved Monthly",
-        "stats": "120h",
-        "description": "Custom n8n automation pipeline bridging legacy ERP systems with modern dispatch tools."
-      }
-    ]
   },
   "services": {
     "subTitle": "services",
@@ -84,6 +52,38 @@
   "trustedTechnologies": {
     "subTitle": "Trusted Technologies",
     "title": "We work with the best tools and platforms"
+  },
+  "provenResults": {
+    "subTitle": "Customer Results",
+    "title": "Proven results",
+    "description": "We measure success by the impact we create. Here is how we've helped our clients scale.",
+    "viewAll": "View all case studies",
+    "results": [
+      {
+        "subTitle": "E-commerce",
+        "title": "Conversion Rate Increase",
+        "stats": "+45%",
+        "description": "Complete headless Shopify migration and checkout optimization for a D2C apparel brand."
+      },
+      {
+        "subTitle": "SaaS",
+        "title": "Organic Traffic Growth",
+        "stats": "2.5x",
+        "description": "Technical SEO overhaul and programmatic content generation structure implementation."
+      },
+      {
+        "subTitle": "Logistics",
+        "title": "Saved Monthly",
+        "stats": "120h",
+        "description": "Custom n8n automation pipeline bridging legacy ERP systems with modern dispatch tools."
+      }
+    ]
+  },
+  "ourProjects": {
+    "subTitle": "Our projects",
+    "title": "Our projects",
+    "description": "We create turnkey websites and advertising - all in one place",
+    "viewAll": "View all"
   },
   "contactForm": {
     "title": "Ready to scale?",
@@ -148,18 +148,69 @@
     "tagline": "We Do #impossibleWEB",
     "privacyPolicy": "Privacy Policy"
   },
+  "servicesPage": {
+    "hero": {
+      "title": "Our services",
+      "subtitle": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets.",
+      "button": "Submit a Request"
+    },
+    "list": {
+      "title": "Our services",
+      "included": "What's included:",
+      "price": "Price:",
+      "submit": "Submit a Request"
+    }
+  },
+  "projectsPage": {
+    "hero": {
+      "title": "Projects",
+      "subtitle": "Our realised projects in different countries. Here you can see examples of our work - websites, online shops and corporate solutions. We create modern and functional web resources adapted to the goals of each client.",
+      "button": "Book Consultation"
+    },
+    "list": {
+      "allProjects": "All projects",
+      "newest": "↓ Newest",
+      "oldest": "↑ Oldest"
+    }
+  },
   "aboutUsPage": {
     "hero": {
       "title": "About us",
-      "subtitle": "We build modern, fast and effective websites that help businesses grow and sell. From idea and design to promotion and advertising - everything is turnkey, with transparent terms and attention to every detail.",
+      "subtitle": "We build modern, fast and effective websites that help businesses grow and sell. From idea and design to promotion and advertising — everything turnkey, with transparent terms and attention to every detail.",
       "button": "Book Consultation"
     },
     "mainText": {
-      "title": "ImpossibleWeb - your reliable partner in web development",
-      "paragraphOneBold": "ImpossibleWeb",
-      "paragraphOne": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library, took a 1914 Cicero translation and scrambled it to make dummy text.",
-      "paragraphTwoBold": "It has survived not only many decades",
-      "paragraphTwo": "but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised thanks to these sheets and more recently with desktop publishing software."
+      "subTitle": "About us",
+      "title": "impossibleWEB — your reliable partner in web development",
+      "intro": "impossibleWEB is a full-cycle agency for web development, promotion and automation. We build websites using modern technologies — Next.js, React, TypeScript — choosing the right stack for each task and budget.",
+      "servicesTitle": "We create websites of any type:",
+      "servicesList": [
+        "Landing pages and high-converting pages",
+        "Business card sites and specialist portfolios",
+        "Online shops with payment system integration",
+        "Multi-page corporate websites",
+        "Custom web applications and services"
+      ],
+      "cycleTitle": "Full-cycle turnkey service:",
+      "cycleList": [
+        "Domain registration and hosting or dedicated server setup",
+        "Design and site structure development",
+        "Build and launch on the optimal stack",
+        "SEO optimization and promotion",
+        "Advertising setup on Google, Instagram, Facebook and TikTok",
+        "Analytics, payment systems and automation integrations"
+      ],
+      "experienceTitle": "Experience you can trust",
+      "experienceText": "We have over 10 years of business experience in Ukraine, Germany and Spain, and over 8 years in web development. This allows us not just to create websites, but to build effective sales tools.",
+      "transparencyTitle": "We work transparently and officially",
+      "transparencyText": "No hidden fees or unnecessary expenses. All amounts and stages are agreed in advance. We accept payment in EUR, USD and UAH.",
+      "cta": "If you want to take your business online and start selling — contact us in any convenient way. We will help make your project successful and profitable.",
+      "subDescText": [
+        "We accept payments in UAH, €, and $.",
+        "Agreement and transparent conditions",
+        "Compliance with deadlines and stages",
+        "Post-launch support"
+      ]
     },
     "numbers": {
       "title": "ImpossibleWeb in figures",
@@ -172,22 +223,37 @@
       ]
     },
     "whyUs": {
-      "title": "Why choose impossibleWeb",
-      "subtitle": "We don't just create websites, we create effective tools for growing your business.",
+      "title": "Why choose impossibleWEB",
+      "subtitle": "We don't just create websites — we build effective tools for growing your business.",
       "cards": [
         {
-          "title": "Personalised approach",
-          "description": "Each project is tailored to meet the goals and specifics of your business."
+          "title": "Personal approach",
+          "description": "Every project is developed with your goals, business specifics and budget in mind. No template solutions."
         },
         {
-          "title": "Full service",
-          "description": "From idea and design to promotion and advertising - everything is turnkey, without extra contractors and overpayments."
+          "title": "Full-cycle service",
+          "description": "From idea and design to promotion and automation — everything turnkey, without extra contractors or overpayments."
         },
         {
           "title": "Real results",
-          "description": "We build websites that bring in customers and sales, not just a \"web presence\"."
+          "description": "We build websites that bring clients and sales, not just an 'online presence'."
         }
       ]
+    }
+  },
+  "blogPage": {
+    "readMore": "Read more",
+    "hero": {
+      "title": "Useful articles",
+      "subtitle": "Web development tips, digital marketing insights and automation guides for modern businesses.",
+      "button": "Book Consultation"
+    },
+    "post": {
+      "back": "Back to blog"
+    },
+    "share": {
+      "label": "Share:",
+      "copied": "Copied!"
     }
   }
 }

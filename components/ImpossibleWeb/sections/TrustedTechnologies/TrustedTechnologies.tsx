@@ -1,6 +1,4 @@
 import scss from './TrustedTechnologies.module.scss';
-import { BsCheckCircle, BsCodeSlash, BsJournalText, BsLightningCharge } from 'react-icons/bs';
-import { VscGraph } from 'react-icons/vsc';
 import { getT } from '@/lib/i18n';
 import { RiNextjsLine, RiNodejsLine, RiReactjsLine, RiWordpressLine } from 'react-icons/ri';
 import { SiN8N, SiTypescript } from 'react-icons/si';

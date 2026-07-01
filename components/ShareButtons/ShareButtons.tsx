@@ -3,13 +3,7 @@
 import { useEffect, useState } from 'react';
 import styles from './ShareButtons.module.scss';
 import { BsTelegram, BsTwitterX, BsFacebook, BsLink45Deg, BsWhatsapp } from 'react-icons/bs';
-
-const ui = {
-  ru: { share: 'Поделиться:', copied: 'Скопировано!' },
-  en: { share: 'Share:', copied: 'Copied!' },
-};
-
-type Lang = 'ru' | 'en';
+import { getT } from '@/lib/i18n';
 
 interface ShareButtonsProps {
   title: string;
@@ -17,9 +11,15 @@ interface ShareButtonsProps {
 }
 
 export default function ShareButtons({ title, lang }: ShareButtonsProps) {
-  const [url, setUrl] = useState(() => (typeof window !== 'undefined' ? window.location.href : ''));
+  const t = getT(lang).blogPage.share;
+  const [url, setUrl] = useState('');
   const [copied, setCopied] = useState(false);
-  const t = ui[lang as Lang] || ui.en;
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setUrl(window.location.href);
+    }
+  }, []);
 
   const encodedUrl = encodeURIComponent(url);
   const encodedTitle = encodeURIComponent(title);
@@ -59,7 +59,7 @@ export default function ShareButtons({ title, lang }: ShareButtonsProps) {
 
   return (
     <div className={styles.shareBlock}>
-      <p className={styles.shareLabel}>{t.share}</p>
+      <p className={styles.shareLabel}>{t.label}</p>
       <div className={styles.buttons}>
         {links.map((link) => (
           <a

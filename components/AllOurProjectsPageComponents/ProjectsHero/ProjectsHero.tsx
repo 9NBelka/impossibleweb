@@ -1,26 +1,10 @@
 'use client';
 
 import scss from './ProjectsHero.module.scss';
-
-const translations = {
-  en: {
-    title: 'Projects',
-    subtitle:
-      'Our realised projects in different countries. Here you can see examples of our work - websites, online shops and corporate solutions. We create modern and functional web resources adapted to the goals of each client.',
-    button: 'Book Consultation',
-  },
-  ru: {
-    title: 'Проекты',
-    subtitle:
-      'Наши реализованные проекты в разных странах. Здесь вы можете увидеть примеры нашей работы — сайты, интернет-магазины и корпоративные решения. Мы создаём современные и функциональные веб-ресурсы, адаптированные под цели каждого клиента.',
-    button: 'Записаться на консультацию',
-  },
-};
-
-type Lang = 'ru' | 'en';
+import { getT } from '@/lib/i18n';
 
 export default function ProjectsHero({ lang }: { lang: string }) {
-  const t = translations[lang as Lang] || translations.en;
+  const t = getT(lang).projectsPage.hero;
 
   const scrollToContact = () => {
     document.getElementById('contacts')?.scrollIntoView({ behavior: 'smooth' });

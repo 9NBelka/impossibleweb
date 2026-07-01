@@ -3,25 +3,11 @@
 import scss from './ServicesList.module.scss';
 import { Service, Lang } from '@/data/services';
 import { BsArrowRightShort, BsCheckCircle } from 'react-icons/bs';
-
-const translations = {
-  en: {
-    included: "What's included:",
-    price: 'Price:',
-    submit: 'Submit a Request',
-    title: 'Our services',
-  },
-  ru: {
-    included: 'Что включено:',
-    price: 'Цена:',
-    submit: 'Оставить заявку',
-    title: 'Наши услуги',
-  },
-};
+import { getT } from '@/lib/i18n';
 
 export default function ServicesList({ services, lang }: { services: Service[]; lang: string }) {
-  const l = (lang as Lang) in translations ? (lang as Lang) : 'en';
-  const t = translations[l];
+  const l = lang as Lang;
+  const t = getT(lang).servicesPage.list;
 
   const scrollToContact = () => {
     document.getElementById('contacts')?.scrollIntoView({ behavior: 'smooth' });
@@ -43,7 +29,6 @@ export default function ServicesList({ services, lang }: { services: Service[]; 
               <div className={scss.content}>
                 <div>
                   <h3 className={scss.title}>{service.title[l]}</h3>
-
                   <p className={scss.subtitle}>{service.subtitle[l]}</p>
                   <p className={scss.description}>{service.description[l]}</p>
 
@@ -66,7 +51,6 @@ export default function ServicesList({ services, lang }: { services: Service[]; 
                   <p className={scss.price}>
                     {t.price} <strong>{service.price[l]}</strong>
                   </p>
-
                   <p className={scss.submitButton} onClick={scrollToContact}>
                     {t.submit} <BsArrowRightShort className={scss.icon} />
                   </p>

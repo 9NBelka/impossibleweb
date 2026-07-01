@@ -171,8 +171,8 @@ export const services: Service[] = [
       ru: 'Реклама, которая приносит заявки, а не просто трафик.',
     },
     description: {
-      en: 'We fix technical debt, improve site speed, and structure data for maximum visibility in search engines.',
-      ru: 'We create and optimize high-performing advertising campaigns that drive real customers while maximizing your advertising budget. Our strategies are built on proven experience helping businesses grow in markets around the world.',
+      en: 'We create and optimize high-performing advertising campaigns that drive real customers while maximizing your advertising budget. Our strategies are built on proven experience helping businesses grow in markets around the world.',
+      ru: 'Мы создаём и оптимизируем высокоэффективные рекламные кампании, которые привлекают реальных клиентов и максимально эффективно используют ваш рекламный бюджет. Наши стратегии основаны на проверенном опыте, помогающем компаниям расти на рынках по всему миру.',
     },
     included: {
       en: [

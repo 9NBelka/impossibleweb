@@ -24,12 +24,26 @@ export default function LangSwitcher({
   const current = languages.find((l) => l.code === currentLang) || languages[0];
 
   const changeLanguage = (langCode: string) => {
-    // Сохраняем выбор пользователя
     localStorage.setItem('preferredLang', langCode);
-
     const newPath = pathname.replace(/^\/(ru|en)\b/, '') || '/';
-    router.push(`/${langCode}${newPath === '/' ? '' : newPath}`);
+    const targetPath = `/${langCode}${newPath === '/' ? '' : newPath}`;
+
+    // Сохраняем позицию скролла
+    const scrollY = window.scrollY;
+
+    router.replace(targetPath, { scroll: false }); // scroll: false — не скроллить наверх
     setIsOpen(false);
+
+    // Восстанавливаем позицию после навигации
+    requestAnimationFrame(() => {
+      window.scrollTo(0, scrollY);
+    });
+  };
+
+  const handleMouseEnter = (langCode: string) => {
+    const newPath = pathname.replace(/^\/(ru|en)\b/, '') || '/';
+    const targetPath = `/${langCode}${newPath === '/' ? '' : newPath}`;
+    router.prefetch(targetPath);
   };
 
   return (
@@ -52,7 +66,8 @@ export default function LangSwitcher({
             <li key={lang.code}>
               <button
                 className={clsx(styles.langItem, lang.code === currentLang && styles.selected)}
-                onClick={() => changeLanguage(lang.code)}>
+                onClick={() => changeLanguage(lang.code)}
+                onMouseEnter={() => handleMouseEnter(lang.code)}>
                 <span className={styles.langShort}>{lang.short}</span>
               </button>
             </li>

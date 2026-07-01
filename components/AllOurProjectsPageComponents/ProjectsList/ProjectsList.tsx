@@ -4,19 +4,7 @@ import { useState } from 'react';
 import scss from './ProjectsList.module.scss';
 import { Project, Lang } from '@/data/projects';
 import LangLink from '@/components/LangLink/LangLink';
-
-const translations = {
-  en: {
-    allProjects: 'All projects',
-    newest: '↓ Newest',
-    oldest: '↑ Oldest',
-  },
-  ru: {
-    allProjects: 'Все проекты',
-    newest: '↓ Сначала новые',
-    oldest: '↑ Сначала старые',
-  },
-};
+import { getT } from '@/lib/i18n';
 
 function parseDate(dateStr: string): Date {
   const [day, month, year] = dateStr.split('.').map(Number);
@@ -24,8 +12,8 @@ function parseDate(dateStr: string): Date {
 }
 
 export default function ProjectsList({ projects, lang }: { projects: Project[]; lang: string }) {
-  const l = (lang as Lang) in translations ? (lang as Lang) : 'en';
-  const t = translations[l];
+  const l = lang as Lang;
+  const t = getT(lang).projectsPage.list;
 
   const [sortOrder, setSortOrder] = useState<'newest' | 'oldest'>('newest');
   const [activeFilter, setActiveFilter] = useState<string | null>(null);

@@ -2,26 +2,10 @@
 
 import scss from './ServicesPageHero.module.scss';
 import TrustedTechnologiesService from './TrustedTechnologiesService/TrustedTechnologiesService';
-
-const translations = {
-  en: {
-    title: 'Our services',
-    subtitle:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset`s Body Type sheets. ',
-    button: 'Submit a Request',
-  },
-  ru: {
-    title: 'Наши услуги',
-    subtitle:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset`s Body Type sheet',
-    button: 'Оставить заявку',
-  },
-};
-
-type Lang = 'ru' | 'en';
+import { getT } from '@/lib/i18n';
 
 export default function ServicesPageHero({ lang }: { lang: string }) {
-  const t = translations[lang as Lang] || translations.en;
+  const t = getT(lang).servicesPage.hero;
 
   const scrollToContact = () => {
     document.getElementById('contacts')?.scrollIntoView({ behavior: 'smooth' });

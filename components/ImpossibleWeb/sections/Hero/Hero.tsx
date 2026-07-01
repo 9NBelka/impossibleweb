@@ -3,6 +3,7 @@
 import scss from './Hero.module.scss';
 import LangLink from '../../../LangLink/LangLink';
 import { getT } from '@/lib/i18n';
+import AnimatedNumber from './AnimatedNumber/AnimatedNumber';
 
 interface HeroProps {
   lang: string;
@@ -42,16 +43,22 @@ export default function Hero({ lang }: HeroProps) {
 
             <div className={scss.stats}>
               <div className={scss.stat}>
-                <strong>8+</strong>
-                <span>{t.hero.stats.experience}</span>
+                <strong className={scss.statNumbers}>
+                  <AnimatedNumber target={8} suffix='+' />
+                </strong>
+                <span className={scss.statNumbersText}>{t.hero.stats.experience}</span>
               </div>
               <div className={scss.stat}>
-                <strong>200+</strong>
-                <span>{t.hero.stats.projects}</span>
+                <strong className={scss.statNumbers}>
+                  <AnimatedNumber target={200} suffix='+' />
+                </strong>
+                <span className={scss.statNumbersText}>{t.hero.stats.projects}</span>
               </div>
               <div className={scss.stat}>
-                <strong>98%</strong>
-                <span>{t.hero.stats.retention}</span>
+                <strong className={scss.statNumbers}>
+                  <AnimatedNumber target={98} suffix='%' />
+                </strong>
+                <span className={scss.statNumbersText}>{t.hero.stats.retention}</span>
               </div>
             </div>
           </div>

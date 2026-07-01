@@ -1,50 +1,6 @@
 import scss from './WhyUs.module.scss';
 import { BsArrowRepeat, BsPatchCheck, BsSliders } from 'react-icons/bs';
-
-const translations = {
-  en: {
-    title: 'Why choose impossibleWeb',
-    subtitle: "We don't just create websites, we create effective tools for growing your business.",
-    cards: [
-      {
-        title: 'Personalised approach',
-        description: 'Each project is tailored to meet the goals and specifics of your business.',
-      },
-      {
-        title: 'Full service',
-        description:
-          'From idea and design to promotion and advertising - everything is turnkey, without extra contractors and overpayments.',
-      },
-      {
-        title: 'Real results',
-        description:
-          'We build websites that bring in customers and sales, not just a "web presence".',
-      },
-    ],
-  },
-  ru: {
-    title: 'Почему выбирают impossibleWeb',
-    subtitle: 'Мы не просто создаём сайты — мы создаём эффективные инструменты для роста бизнеса.',
-    cards: [
-      {
-        title: 'Персональный подход',
-        description: 'Каждый проект адаптируется под цели и специфику вашего бизнеса.',
-      },
-      {
-        title: 'Полный цикл',
-        description:
-          'От идеи и дизайна до продвижения и рекламы — всё под ключ, без лишних подрядчиков и переплат.',
-      },
-      {
-        title: 'Реальные результаты',
-        description:
-          'Мы создаём сайты, которые приносят клиентов и продажи, а не просто «присутствие в интернете».',
-      },
-    ],
-  },
-};
-
-type Lang = 'ru' | 'en';
+import { getT } from '@/lib/i18n';
 
 const icons = [
   <BsSliders className={scss.cardIcon} />,
@@ -53,7 +9,7 @@ const icons = [
 ];
 
 export default function WhyUs({ lang }: { lang: string }) {
-  const t = translations[lang as Lang] || translations.en;
+  const t = getT(lang).aboutUsPage.whyUs;
 
   return (
     <section className={scss.whyUs} id='aboutUs'>

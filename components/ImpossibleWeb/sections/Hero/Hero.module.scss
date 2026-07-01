@@ -145,7 +145,7 @@
       align-items: center;
       gap: 0.65vw;
 
-      strong {
+      & .statNumbers {
         font-size: 1.65vw;
         color: var(--color-red-main);
         font-family: var(--font-Inter);
@@ -153,7 +153,7 @@
         line-height: var(--font-lineh-normal);
       }
 
-      span {
+      & .statNumbersText {
         font-size: 0.85vw;
         color: var(--color-lightGray);
         font-family: var(--font-Inter);
@@ -224,11 +224,11 @@
         flex-direction: column;
         gap: 0vw;
 
-        strong {
+        & .statNumbers {
           font-size: 3.6vw;
         }
 
-        span {
+        & .statNumbersText {
           font-size: 1.8vw;
           margin-top: 0vw;
         }
@@ -306,11 +306,11 @@
         flex-direction: column;
         gap: 0vw;
 
-        strong {
+        & .statNumbers {
           font-size: 7.5vw;
         }
 
-        span {
+        & .statNumbersText {
           font-size: 3.6vw;
           margin-top: 0vw;
         }

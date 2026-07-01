@@ -80,7 +80,7 @@
   align-items: center;
   gap: 0.65vw;
 
-  strong {
+  & .statNumbers {
     font-size: 2vw;
     color: var(--color-red-main);
     font-family: var(--font-Inter);
@@ -88,7 +88,7 @@
     line-height: var(--font-lineh-normal);
   }
 
-  span {
+  & .statNumbersText {
     font-size: 0.85vw;
     color: var(--color-lightGray);
     font-family: var(--font-Inter);
@@ -112,11 +112,11 @@
     padding: 1vw 3.5vw;
     border-radius: 2vw;
 
-    strong {
+    & .statNumbers {
       font-size: 3.6vw;
     }
 
-    span {
+    & .statNumbersText {
       font-size: 1.8vw;
       margin-top: 0vw;
     }
@@ -140,12 +140,12 @@
     border-radius: 3vw;
     width: 47%;
 
-    strong {
+    & .statNumbers {
       font-size: 7.5vw;
       text-align: center;
     }
 
-    span {
+    & .statNumbersText {
       font-size: 3.6vw;
       margin-top: 0vw;
       text-align: center;
